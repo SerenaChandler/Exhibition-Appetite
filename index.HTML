@@ -3,12 +3,12 @@
 
 <head>
     <meta chartset="UTF-8">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="/assets/CSS/style.css">
+    <link rel="stylesheet" href="./assets/CSS/style.css">
     <title>Safe Travels</title>
 </head>
 
@@ -19,14 +19,44 @@
     </header>
 
 
+
+
     <div class="row">
+        <!-- SEARCH CONTAINER -->
         <div class="col s12 m4 l3 deep-orange darken-1">
             <h3>Search Area</h3>
+
+            <input placeholder="What city are you traveling to?" id="first_name" type="text" class="validate col s12">
+            <label for="destination-city"></label>
+
+            <input placeholder="Arrival Date" type="text" class="datepicker col s12">
+            <label for="arrival-date"></label>
+
+            <select>
+                <option value="" disabled selected>Choose your option</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+            </select>
+            <label>Mode of Transportation</label>
+
+            <hr>
+
+            <button class="col s12 btn waves-effect waves-light" type="submit" name="action">Search</button>
         </div>
+
+
+
+
+
         <div class="col s12 m8 l9 blue darken-1">
             <h3>About us Info, how the website works, blah blah blah</h3>
         </div>
     </div>
+
+
+
+
 
     <div class="row">
         <div class="col s12 m6 deep-orange darken-1">
@@ -46,7 +76,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="assets/JS/script.js"></script>
+    <script src="./assets/JS/script.js"></script>
 </body>
 
 </html>
