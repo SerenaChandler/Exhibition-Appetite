@@ -1,3 +1,19 @@
+header {
+    height: 100px;
+}
+
+header h1 {
+    margin: 0;
+}
+
 .btn {
     margin-bottom: 10px;
+}
+
+#aboutUs {
+    height: 100%;
+}
+
+footer {
+    margin: 0;
 }

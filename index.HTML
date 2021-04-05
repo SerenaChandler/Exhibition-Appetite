@@ -14,61 +14,83 @@
 
 <body>
 
-    <header class="row deep-orange darken-1">
+    <header class="center-align deep-orange darken-1">
         <h1>Welcome to Safe Travels</h1>
     </header>
 
-
-
+    <div class="container">
+        <img class="responsive-img" src="./assets/images/generic-travel-pic-2.jpg">
+    </div>
 
     <div class="row">
         <!-- SEARCH CONTAINER -->
         <div class="col s12 m4 l3 deep-orange darken-1">
             <h3>Search Area</h3>
-
             <input placeholder="What city are you traveling to?" id="first_name" type="text" class="validate col s12">
             <label for="destination-city"></label>
-
             <input placeholder="Arrival Date" type="text" class="datepicker col s12">
             <label for="arrival-date"></label>
-
             <select>
                 <option value="" disabled selected>Choose your option</option>
-                <option value="1">Option 1</option>
-                <option value="2">Option 2</option>
-                <option value="3">Option 3</option>
+                <option value="1">Walk</option>
+                <option value="2">Bicycle</option>
+                <option value="3">Drive</option>
+                <option value="3">Transit</option>
             </select>
             <label>Mode of Transportation</label>
-
             <hr>
-
-            <button class="col s12 btn waves-effect waves-light" type="submit" name="action">Search</button>
+            <button class="btn waves-effect waves-light" type="submit" name="action">Search</button>
         </div>
 
-
-
-
-
-        <div class="col s12 m8 l9 blue darken-1">
-            <h3>About us Info, how the website works, blah blah blah</h3>
+        <!-- ABOUT US CONTAINER -->
+        <div id="aboutUs" class="col s12 m8 l9 blue darken-1">
+            <h3>Are you traveling? Stay safe by using our application to check
+                the local flu events to the place your traveling to.
+            </h3>
+            <p>This is super easy to use just enter your destination and the date your are arriving.
+                You can also tell us how you are traveling there and we will give you the best route to travel.
+            </p>
         </div>
     </div>
 
 
-
-
-
     <div class="row">
+        <!-- SEARCH RESULTS -->
         <div class="col s12 m6 deep-orange darken-1">
             <h3>Search results</h3>
         </div>
+
+        <!-- LOCAL FLU EVENT RESULTS -->
         <div class="col s12 m6 blue darken-1">
             <h3>Flu results</h3>
         </div>
     </div>
 
-    <footer>
-        <h6 class="row deep-orange darken-1">Contact Info</h6>
+
+    
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Find out more about the creators of this page.</h5>
+                    <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.
+                    </p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Visit our Creators GitHub pages!</h5>
+                    <ul>
+                      <li><a class="grey-text text-lighten-3" href="https://github.com/SerenaChandler">Serena</a></li>
+                      <li><a class="grey-text text-lighten-3" href="https://github.com/dnovelli1">Jake</a></li>
+                      <li><a class="grey-text text-lighten-3" href="https://github.com/cheng21tang">Cheng</a></li>
+                    </ul>
+                  </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2021 Copyright Text
+            </div>
+        </div>
     </footer>
 
 
