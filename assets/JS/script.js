@@ -3,16 +3,42 @@ var searchBtn = $(".searchButton");
 var destination = $(".desination");
 var transport = $(".transport");
 
-var googleAPI = "https://maps.googleapis.com/maps/api/distancematrix/outputFormat?parameters";
+var googleKey = 'AIzaSyDeiBrvVx6CsYF4J34xVFLvm1ObiiPKrdQ';
+
+var googleAPI = "https://maps.googleapis.com/maps/api/distancematrix/json?origins=milpitas&key=" + googleKey;
 
 var fluAPI = "	http://api.flutrack.org/?s=feverANDcoughORfever";
 
 
 
+// select option for mode of transport
+$(document).ready(function(){
+    $('select').formSelect();
+  });
 
-$.ajax({
-    url: googleAPI, 
-    method: "GET"
-}).then(function (response){
+
+
+
+function test() {
+
+    $.ajax({
+        url: googleAPI, 
+        method: "GET",
+        dataType: 'jsonp',
+        cache: false,
+    }).then(function (response){
+        console.log(response)
+    });
     console.log(response)
-});
+}
+
+// $.ajax({
+//     url: Auto_Complete_Link, 
+//     type: "GET",   
+//     dataType: 'jsonp',
+//     cache: false,
+//     success: function(response){                          
+//         alert(response);                   
+//     }           
+// });    
+test()
