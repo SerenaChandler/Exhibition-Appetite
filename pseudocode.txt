@@ -1,0 +1,16 @@
+HTML: use the materealize framework to construct a basic layout for the webpage.
+- we will need a header
+- We will use a container which holds a form which prompts the user to enter local, destination, and mode of transport
+- the next container will be a site description, with basic instructions on how to navigate the site
+- the next container will hold the results of the search, which include travel time
+- the next container will hold flu chatter in the destination area (maybe even a graph if we get fancy)
+- one final container will hold the footer
+
+
+JS: We need to find and test APIs to ensure they function how we need them to
+- create a function that will use the input data from the user to fetch the APIs    
+    -this function will also store the input data in the local storage, so it can be saved and refered back to later.
+-set up an onclick function for the submit button which will run the fetch function
+- move through the DOM to decipher the needed information from the APIs
+-With the results from the API, append it to specific IDs/Classes in the HTML
+-within the input container, add modals which allow users to input data more easily
