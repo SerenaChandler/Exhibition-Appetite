@@ -1,17 +1,33 @@
 
+body {
+    background-color: lightsteelblue;
+}
+
+header {
+    background-color: #3E6BBD;
+};
+
+#searchArea {
+    background-color: #67E1F0;
+};
+
 
 header h1 {
     margin: 0;
-}
+};
 
 .btn {
     margin-bottom: 10px;
-}
+};
 
 #aboutUs {
     height: 100%;
-}
+};
 
 footer {
     margin: 0;
-}
+};
+
+.row {
+    margin: 0;
+};

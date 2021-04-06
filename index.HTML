@@ -13,61 +13,62 @@
 </head>
 
 <body>
+    <div>
+        <header class="center-align">
+            <h1>Welcome to Safe Travels</h1>
+        </header>
 
-    <header class="center-align deep-orange darken-1">
-        <h1>Welcome to Safe Travels</h1>
-    </header>
+        <div class="container">
+            <img class="responsive-img" src="./assets/images/hero-travel.jpg">
+        </div>
 
-    <div class="container">
-        <img class="responsive-img" src="./assets/images/generic-travel-pic-2.jpg">
+        <div class="row">
+            <!-- SEARCH CONTAINER -->
+            <div id="searchArea" class="col s12 m4 l3 deep-orange lighten-4">
+                <h3>Search Area</h3>
+                <input placeholder="What city are you traveling to?" id="first_name" type="text" class="validate col s12">
+                <label for="destination-city"></label>
+                <input placeholder="Arrival Date" type="text" class="datepicker col s12">
+                <label for="arrival-date"></label>
+                <select>
+                    <option value="" disabled selected>Choose your option</option>
+                    <option value="1">Walk</option>
+                    <option value="2">Bicycle</option>
+                    <option value="3">Drive</option>
+                    <option value="3">Transit</option>
+                </select>
+                <label>Mode of Transportation</label>
+                <hr>
+                <button class="btn waves-effect waves-light" type="submit" name="action">Search</button>
+            </div>
+        
+            <!-- ABOUT US CONTAINER -->
+            <div id="aboutUs" class="row deep-orange darken-4">
+                <div class="col s12 m8 l9">
+                    <h3>Are you traveling? Stay safe by using our application to check
+                        the local flu events to the place your traveling to.
+                    </h3>
+                    <p>This is super easy to use just enter your destination and the date your are arriving.
+                        You can also tell us how you are traveling there and we will give you the best route to travel.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row brown lighten-4">
+            <!-- SEARCH RESULTS -->
+            <div class="col s12 m5 offset-m1 card-panel teal">
+                <h4 class="white-text">travel results travel results travel results travel results travel results travel results travel results travel results travel results travel results </h4>
+            </div>
+
+            <!-- LOCAL FLU EVENT RESULTS -->
+            <div class="col s12 m5 card-panel teal">
+                <h4 class="white-text">flu results flu results flu results flu results flu results flu results flu results flu results flu results flu results flu results flu results flu results </h4>
+            </div>
+        </div>
+
     </div>
 
-    <div class="row">
-        <!-- SEARCH CONTAINER -->
-        <div class="col s12 m4 l3 deep-orange darken-1">
-            <h3>Search Area</h3>
-            <input placeholder="What city are you traveling to?" id="first_name" type="text" class="validate col s12">
-            <label for="destination-city"></label>
-            <input placeholder="Arrival Date" type="text" class="datepicker col s12">
-            <label for="arrival-date"></label>
-            <select>
-                <option value="" disabled selected>Choose your option</option>
-                <option value="1">Walk</option>
-                <option value="2">Bicycle</option>
-                <option value="3">Drive</option>
-                <option value="3">Transit</option>
-            </select>
-            <label>Mode of Transportation</label>
-            <hr>
-            <button class="btn waves-effect waves-light" type="submit" name="action">Search</button>
-        </div>
-
-        <!-- ABOUT US CONTAINER -->
-        <div id="aboutUs" class="col s12 m8 l9 blue darken-1">
-            <h3>Are you traveling? Stay safe by using our application to check
-                the local flu events to the place your traveling to.
-            </h3>
-            <p>This is super easy to use just enter your destination and the date your are arriving.
-                You can also tell us how you are traveling there and we will give you the best route to travel.
-            </p>
-        </div>
-    </div>
-
-
-    <div class="row">
-        <!-- SEARCH RESULTS -->
-        <div class="col s12 m6 deep-orange darken-1">
-            <h3>Search results</h3>
-        </div>
-
-        <!-- LOCAL FLU EVENT RESULTS -->
-        <div class="col s12 m6 blue darken-1">
-            <h3>Flu results</h3>
-        </div>
-    </div>
-
-
-    
     <footer class="page-footer">
         <div class="container">
             <div class="row">
