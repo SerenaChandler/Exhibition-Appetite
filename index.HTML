@@ -9,6 +9,7 @@
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="./assets/CSS/style.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default%22%3E"></script>
     <title>Safe Travels</title>
 </head>
 
@@ -26,19 +27,24 @@
             <!-- SEARCH CONTAINER -->
             <div id="searchArea" class="col s12 m4 l3 blue darken-3">
                 <h3>Search Area</h3>
-                <input placeholder="What city are you traveling to?" id="first_name" type="text" class="validate col s12">
-                <label for="destination-city"></label>
-                <input placeholder="Arrival Date" type="text" class="datepicker col s12">
-                <label for="arrival-date"></label>
-                <select>
-                    <option value="" disabled selected>Mode of Transportation</option>
-                    <option value="1">Walk</option>
-                    <option value="2">Bicycle</option>
-                    <option value="3">Drive</option>
-                    <option value="3">Transit</option>
-                </select>
-                <label>Mode of Transportation</label>
-                <hr>
+                <form>
+                    <div class="input-field">
+                        <input id="originCity" class="validate col s12" type="text" placeholder="Origin City">
+                        <label for="origin-city"></label>
+                    </div>
+                    <div class="input-field">
+                        <input id="originState" class="validate col s12" type="text" placeholder="Origin State">
+                        <label for="origin-city"></label>
+                    </div>
+                    <div class="input-field">
+                        <input id="destCity" class="validate col s12" type="text" placeholder="Destination City">
+                        <label for="origin-city"></label>
+                    </div>
+                    <div class="input-field">
+                        <input id="destState" class="validate col s12" type="text" placeholder="Destination State">
+                        <label for="origin-city"></label>
+                    </div>
+                </form>
                 <button class="btn waves-effect waves-light col s12" type="submit" name="action">Search</button>
             </div>
         
@@ -92,33 +98,22 @@
                 © 2021 Copyright Text
             </div>
         </div>
-    </footer>
+    </footer>  
 
-
-    
 
     <!-- jQuery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    
+    <!-- GOOGLE API -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDeiBrvVx6CsYF4J34xVFLvm1ObiiPKrdQ&callback=initMap&libraries=&v=weekly" async></script>
+    <!-- MATERIALIZE CSS INIT FUNCTIONS -->
     <script>
         $(document).ready(function(){
             $('select').formSelect();
-        
         });
-        // $(document).ready(function() {
-
-        //     $('.datepicker').datepicker();
-
-        // });
-
     </script>
-
     <script src="./assets/JS/script.js"></script>
-
-    
-
 </body>
 
 </html>
