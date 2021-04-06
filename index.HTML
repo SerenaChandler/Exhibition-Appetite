@@ -3,7 +3,7 @@
 
 <head>
     <meta chartset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Compiled and minified CSS -->
@@ -19,9 +19,17 @@
             <h1>Welcome to Safe Travels</h1>
         </header>
 
-        <div class="container">
-            <img class="responsive-img" src="./assets/images/hero-travel.jpg">
+        <div class="carousel carousel-slider center">
+            <a class="carousel-item" href="#one!"><img src="./assets/images/carousel/carousel-1.jpg"></a>
+            <a class="carousel-item" href="#two!"><img src="./assets/images/carousel/carousel-2.jpg"></a>
+            <a class="carousel-item" href="#three!"><img src="./assets/images/carousel/carousel-3.jpg"></a>
+            <a class="carousel-item" href="#four!"><img src="./assets/images/carousel/carousel-4.jpg"></a>
+            <a class="carousel-item" href="#five!"><img src="./assets/images/carousel/carousel-5.jpg"></a>
         </div>
+
+        <!-- <div class="container">
+            <img class="responsive-img" src="./assets/images/hero-travel.jpg">
+        </div> -->
 
         <div class="row">
             <!-- SEARCH CONTAINER -->
@@ -47,7 +55,7 @@
                 </form>
                 <button class="btn waves-effect waves-light col s12" type="submit" name="action">Search</button>
             </div>
-        
+
             <!-- ABOUT US CONTAINER -->
             <div id="aboutUs" class="row deep-orange darken-4">
                 <div class="col s12 m8 l9">
@@ -64,12 +72,14 @@
         <div class="row brown lighten-4">
             <!-- SEARCH RESULTS -->
             <div class="col s12 m5 offset-m1 card-panel teal margin-right-1">
-                <p class="flow-text white-text">travel results travel results travel results travel results travel results travel results travel results travel results travel results travel results </p>
+                <p class="flow-text white-text">travel results travel results travel results travel results travel
+                    results travel results travel results travel results travel results travel results </p>
             </div>
 
             <!-- LOCAL FLU EVENT RESULTS -->
             <div class="col s12 m5 card-panel teal">
-                <p class="flow-text white-text">flu results flu results flu results flu results flu results flu results flu results flu results flu results flu results flu results flu results flu results </p>
+                <p class="flow-text white-text">flu results flu results flu results flu results flu results flu results
+                    flu results flu results flu results flu results flu results flu results flu results </p>
             </div>
         </div>
 
@@ -80,17 +90,18 @@
             <div class="row">
                 <div class="col l6 s12">
                     <h5 class="white-text">Find out more about the creators of this page.</h5>
-                    <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.
+                    <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer
+                        content.
                     </p>
                 </div>
                 <div class="col l4 offset-l2 s12">
                     <h5 class="white-text">Visit our Creators GitHub pages!</h5>
                     <ul>
-                      <li><a class="grey-text text-lighten-3" href="https://github.com/SerenaChandler">Serena</a></li>
-                      <li><a class="grey-text text-lighten-3" href="https://github.com/dnovelli1">Jake</a></li>
-                      <li><a class="grey-text text-lighten-3" href="https://github.com/cheng21tang">Cheng</a></li>
+                        <li><a class="grey-text text-lighten-3" href="https://github.com/SerenaChandler">Serena</a></li>
+                        <li><a class="grey-text text-lighten-3" href="https://github.com/dnovelli1">Jake</a></li>
+                        <li><a class="grey-text text-lighten-3" href="https://github.com/cheng21tang">Cheng</a></li>
                     </ul>
-                  </div>
+                </div>
             </div>
         </div>
         <div class="footer-copyright">
@@ -98,20 +109,28 @@
                 © 2021 Copyright Text
             </div>
         </div>
-    </footer>  
+    </footer>
 
 
     <!-- jQuery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous"></script>
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <!-- GOOGLE API -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDeiBrvVx6CsYF4J34xVFLvm1ObiiPKrdQ&callback=initMap&libraries=&v=weekly" async></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDeiBrvVx6CsYF4J34xVFLvm1ObiiPKrdQ&callback=initMap&libraries=&v=weekly"
+        async></script>
     <!-- MATERIALIZE CSS INIT FUNCTIONS -->
     <script>
-        $(document).ready(function(){
-            $('select').formSelect();
+        $(document).ready(function () {
+            $('.carousel.carousel-slider').carousel({
+                fullWidth: true,
+                indicators: true,
+            });
         });
+
     </script>
     <script src="./assets/JS/script.js"></script>
 </body>
