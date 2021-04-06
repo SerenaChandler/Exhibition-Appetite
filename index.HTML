@@ -31,7 +31,7 @@
                 <input placeholder="Arrival Date" type="text" class="datepicker col s12">
                 <label for="arrival-date"></label>
                 <select>
-                    <option value="" disabled selected>Choose your option</option>
+                    <option value="" disabled selected>Mode of Transportation</option>
                     <option value="1">Walk</option>
                     <option value="2">Bicycle</option>
                     <option value="3">Drive</option>
@@ -95,11 +95,30 @@
     </footer>
 
 
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
+
     <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
+    <script>
+        $(document).ready(function(){
+            $('select').formSelect();
+        
+        });
+        // $(document).ready(function() {
+
+        //     $('.datepicker').datepicker();
+
+        // });
+
+    </script>
+
     <script src="./assets/JS/script.js"></script>
+
+    
+
 </body>
 
 </html>
