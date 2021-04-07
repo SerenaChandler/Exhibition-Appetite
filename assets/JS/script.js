@@ -13,10 +13,10 @@ var searchBtn = $(".btn");
 // var googleAPI = `https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/distancematrix/json?units=imperial&origins=` + origin + `,` + oState + `&destinations=` + dCity + `,` + dState + `&key=AIzaSyCBZc_OSBv_nae-DTj4IXZ1x7Zb00XzcRQ`;
 
 
-searchBtn.on('click', () => getInfo())
+searchBtn.on('click', () => getDistance())
 
 
-function getInfo(){
+function getDistance(){
     
     var origin = $('.originCity').val();
     var oState = $('.originState').val();
@@ -31,10 +31,26 @@ function getInfo(){
     }).then(function(response){
         console.log(response);
 
+        var disResult = $('#travelResults').append('<div>').addClass('card-body');
+        disResult.empty();
+
+        var partResult = disResult.append('<p>');
+        disResult.append(partResult);
+
+        partResult.append('<p>' + 'Your starting location: ' + response.origin_addresses[0] + '</p>');
+        partResult.append('<p>' + '<i class="endFlag fas fa-flag-checkered">' + '</i>' + 'Your ending location: ' + response.destination_addresses[0] + '</p>');
+        partResult.append('<p>' + 'Drive time: ' + response.rows[0].elements[0].duration.text + '</p>');
+        partResult.append('<p>' + 'Distance: ' + response.rows[0].elements[0].distance.text + '</p>');
+
+
+
 
 })
 
 }
+
+// Flu results id
+
 
 // Append to the .card-panel
 
