@@ -27,28 +27,53 @@ function getDistance(){
         method: 'GET'
     }).then(function(response){
         console.log(response);
+        var infoBoxObj = {
+          startAddress: response.routes[0].legs[0].start_address,
+          endAddress: response.routes[0].legs[0].end_address,
+          travelTime: response.routes[0].legs[0].duration.text,
+          travelDist: response.routes[0].legs[0].distance.text
+        };
+        generateInfoBox(infoBoxObj);
+        testFood(infoBoxObj);
+    })
+    function testFood(infoBoxObj){
+        var yelpURL = 'https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?limit=5&term=sushi&location=' + infoBoxObj.endAddress + '&';
+        $.ajax({
+            url: yelpURL,
+            method: 'GET',
+            headers: {
+                authorization: "Bearer glAWlbbO8-yveIvnxPUtI62Kfbv9m3ozQ_YP3CwLIuzY3nRoTJkddG3iJi3TLiiDpzdBffPsdErIXn6Yuv5qdccoUZkEDu39rImm1UTEwPMVYikqkoAPtUdmK-dtYHYx"
+            }
+        }).then(function(response){
+        console.log(response)
+        // var foodBoxObj = {
+        //     foodImage = response.businesses[i].image_url,
+        // 
+        // 
+        // 
+            
+        // }
+    })}}
+
+
+
+    function generateInfoBox(infoBoxObj) {
         var disResult = $('#travelResults').append('<div>').addClass('card-body');
         disResult.empty();
 
         var partResult = disResult.append('<p>');
         disResult.append(partResult);
 
-        partResult.append('<p>' + '<i class="material-icons">person_pin</i>' + 'Your starting location: ' + response.routes[0].legs[0].start_address + '</p>');
-        partResult.append('<p>' + '<i class="material-icons">place</i>' + '</i>' + 'Your ending location: ' + response.routes[0].legs[0].end_address + '</p>');
-        partResult.append('<p>' + '<i class="material-icons">drive_eta</i>' + 'Drive time: ' + response.routes[0].legs[0].duration.text + '</p>');
-        partResult.append('<p>' + '<i class="material-icons">arrow_forward</i>' + 'Distance: ' + response.routes[0].legs[0].distance.text + '</p>');
+        partResult.append('<p>' + '<i class="material-icons">person_pin</i>' + 'Your starting location: ' + infoBoxObj.startAddress + '</p>');
+        partResult.append('<p>' + '<i class="material-icons">place</i>' + '</i>' + 'Your ending location: ' + infoBoxObj.endAddress + '</p>');
+        partResult.append('<p>' + '<i class="material-icons">drive_eta</i>' + 'Drive time: ' + infoBoxObj.travelTime + '</p>');
+        partResult.append('<p>' + '<i class="material-icons">arrow_forward</i>' + 'Distance: ' + infoBoxObj.travelDist + '</p>');
         var tabBarEl = $('#tab-bar').append('<ul>').addClass('tabs');
-        var tabsEl = tabBarEl.append('<a> href="#search1">' + dCity + '<a>');
+        var tabsEl = tabBarEl.append('<a href="#' + infoBoxObj.endAddress + '">' + infoBoxObj.endAddress + '</a>').addClass('tab col');
         $(tabsEl).wrap('<li class="tab col"></li>');
+    }
 
-    $.ajax({
-        url: hotelAPI,
-        method: 'GET'
-    }).then(function(response){
-        console.log(response)
-    })})}
-
-
+    // function generateFoodBox(foodBoxObj)
 
 
 
@@ -57,3 +82,13 @@ function getDistance(){
 // Ending lat and long
 // response.routes[0].legs[0].end_location.lat
 // response.routes[0].legs[0].end_location.lng
+
+
+
+
+
+// Name of business at the very top
+// Image of the business
+// Address of the business
+// Price
+// Rating
