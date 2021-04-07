@@ -82,3 +82,14 @@ footer {
 .collapsible-body {
     background-color: white;
 }
+
+.carousel {
+    margin-bottom: 20px;
+}
+
+.carousel-item {
+    background-color: #3b4a6b;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+}
