@@ -1,14 +1,45 @@
+* {
+    font-family: 'New Tegomin', serif;
+}
 
 body {
-    background-color: lightsteelblue;
+    background-color: #45577D;
+    
+}
+
+header {
+    background-color: #3b4a6b;
+    height: 150px;
+    display: flex;
+    align-items: flex-start;
 }
 
 header h1 {
+    flex: 1;
+}
+
+h1 {
     margin: 0;
+    align-self: center;
+    text-align: center;
+}
+
+#searchArea {
+    background-color: #3b4a6b;
+}
+
+#aboutUs {
+    background-color: #45577D;
 }
 
 .btn {
     margin-bottom: 25px;
+    background-color: #FC90A4;
+    font-family: 'New Tegomin', serif;
+}
+
+.input-field {
+    font-family: 'New Tegomin', serif;
 }
 
 #aboutUs {
@@ -25,4 +56,21 @@ footer {
 
 .endFlag {
     
+}
+
+#travelResults {
+    background-color: #3b4a6b;
+}
+
+#fluResults {
+    background-color: #3b4a6b;
+}
+
+.page-footer {
+    background-color: #FC90A4;
+}
+
+ul.dropdown-content.select-dropdown li span {
+    color: #FC90A4;
+    background-color: #45577D;
 }
