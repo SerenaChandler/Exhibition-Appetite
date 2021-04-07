@@ -9,7 +9,6 @@
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="./assets/CSS/style.css">
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=default%22%3E"></script>
     <title>Safe Travels</title>
 </head>
 
@@ -37,23 +36,23 @@
                 <h3>Search Area</h3>
                 <form>
                     <div class="input-field">
-                        <input id="originCity" class="col s12" type="text" placeholder="Origin City">
+                        <input class="originCity col s12" type="text" placeholder="Origin City">
                         <label for="origin-city"></label>
                     </div>
                     <div class="input-field">
-                        <input id="originState" class="col s12" type="text" placeholder="Origin State">
+                        <input class="originState col s12" type="text" placeholder="Origin State">
                         <label for="origin-city"></label>
                     </div>
                     <div class="input-field">
-                        <input id="destCity" class="col s12" type="text" placeholder="Destination City">
+                        <input class="destCity col s12" type="text" placeholder="Destination City">
                         <label for="origin-city"></label>
                     </div>
                     <div class="input-field">
-                        <input id="destState" class="col s12" type="text" placeholder="Destination State">
+                        <input class="destState col s12" type="text" placeholder="Destination State">
                         <label for="origin-city"></label>
                     </div>
                 </form>
-                <button class="btn waves-effect waves-light col s12" type="submit" name="action">Search</button>
+                <button class="btn btn-large waves-effect waves-light col s12" type="submit" name="action"><i class="material-icons">search</i> Search</button>
             </div>
 
             <!-- ABOUT US CONTAINER -->
@@ -97,9 +96,9 @@
                 <div class="col l4 offset-l2 s12">
                     <h5 class="white-text">Visit our Creators GitHub pages!</h5>
                     <ul>
-                        <li><a class="grey-text text-lighten-3" href="https://github.com/SerenaChandler">Serena</a></li>
-                        <li><a class="grey-text text-lighten-3" href="https://github.com/dnovelli1">Jake</a></li>
-                        <li><a class="grey-text text-lighten-3" href="https://github.com/cheng21tang">Cheng</a></li>
+                        <li><a class="grey-text text-lighten-3" href="https://github.com/SerenaChandler" target="_blank">Serena</a></li>
+                        <li><a class="grey-text text-lighten-3" href="https://github.com/dnovelli1" target="_blank">Jake</a></li>
+                        <li><a class="grey-text text-lighten-3" href="https://github.com/cheng21tang" target="_blank">Cheng</a></li>
                     </ul>
                 </div>
             </div>
@@ -118,10 +117,6 @@
         crossorigin="anonymous"></script>
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <!-- GOOGLE API -->
-    <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDeiBrvVx6CsYF4J34xVFLvm1ObiiPKrdQ&callback=initMap&libraries=&v=weekly"
-        async></script>
     <!-- MATERIALIZE CSS INIT FUNCTIONS -->
     <script>
         $(document).ready(function () {
