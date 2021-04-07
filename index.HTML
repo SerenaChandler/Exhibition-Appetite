@@ -21,52 +21,45 @@
         <h1 class="">Let's go get some FOOD!</h1>
     </header>
 
-
     <div class="container">
-
         <div class="parallax-container">
             <div class="parallax"><img src="./assets/images/carousel/hero-travel.jpg"></div>
         </div>
 
         <div class="row">
             <!-- SEARCH CONTAINER -->
-            <div id="searchArea" class="col s12 m4 l3 white-text">
+            <div id="searchArea" class="col s12 m4 l4 white-text">
                 <h3>Search Area</h3>
                 <form>
                     <div class="input-field">
-                        <input class="originCity col s12 white-text" type="text" placeholder="Origin City">
+                        <input class="originCity white-text" type="text" placeholder="Origin City">
                         <label for="origin-city"></label>
                     </div>
                     <div class="input-field">
-                        <input class="originState col s12 white-text" type="text" placeholder="Origin State">
+                        <input class="originState white-text" type="text" placeholder="Origin State">
                         <label for="origin-state"></label>
                     </div>
                     <div class="input-field">
-                        <input class="destCity col s12 white-text" type="text" placeholder="Destination City">
+                        <input class="destCity white-text" type="text" placeholder="Destination City">
                         <label for="desttination-city"></label>
                     </div>
                     <div class="input-field">
-                        <input class="destState col s12 white-text" type="text" placeholder="Destination State">
+                        <input class="destState white-text" type="text" placeholder="Destination State">
                         <label for="destination-state"></label>
                     </div>
-                    <div class="input-field col s12">
-                        <select>
-                            <option value="" disabled selected>Choose your favorite food</option>
-                            <option value="1">American</option>
-                            <option class="food-text" value="2">Mexican</option>
-                            <option class="food-text" value="3">Japanese</option>
-                            <option class="food-text" value="3">Italian</option>
-                            <option class="food-text" value="3">Mongolian</option>
-                        </select>
-                        <label for="food-genre"></label>
-                    </div>
                 </form>
-                <button class="btn btn-large waves-effect waves-light col s12 black-text" type="submit" name="action"><i class="material-icons">search</i> Search</button>
+                <div class="input-field">
+                    <input class="foodGenre white-text" type="text" placeholder="Favorite Food">
+                    <label for="destination-state"></label>
+                </div>
+                </form>
+                <button class="btn btn-large waves-effect waves-light col s12 black-text" type="submit" name="action"><i
+                        class="material-icons">search</i> Search</button>
             </div>
 
             <!-- ABOUT US CONTAINER -->
             <div id="aboutUs" class="row white-text">
-                <div class="col s12 m8 l9">
+                <div class="col s12 m8 l8">
                     <h3>Are you traveling? Stay safe by using our application to check
                         the local flu events to the place your traveling to.
                     </h3>
@@ -81,8 +74,8 @@
         <div class="row">
             <div id="tab-bar" class="col s12 white">
                 <!-- <ul class="tabs"> -->
-                    <!-- <p><i class="material-icons">search</i></p> -->
-                    <!-- <li class="tab col"><a href="#search1">Los Angeles</a></li>
+                <!-- <p><i class="material-icons">search</i></p> -->
+                <!-- <li class="tab col"><a href="#search1">Los Angeles</a></li>
                     <li class="tab col"><a href="#search2">Las Vegas</a></li>
                     <li class="tab col"><a href="#search3">Vacaville</a></li>
                     <li class="tab col"><a href="#search4">Long Beach</a></li>
@@ -93,30 +86,77 @@
             </div>
         </div>
 
-        <!-- CAROUSEL SLIDER -->
-        <div class="carousel carousel-slider parallax-container" style="max-height:500px">
-            <a class="carousel-item responsive-img parallax" href="#one!"><img src="./assets/images/carousel/carousel-1.jpg"></a>
-            <a class="carousel-item responsive-img parallax" href="#two!"><img src="./assets/images/carousel/carousel-2.jpg"></a>
-            <a class="carousel-item responsive-img parallax" href="#three!"><img src="./assets/images/carousel/carousel-3.jpg"></a>
-            <a class="carousel-item responsive-img parallax" href="#four!"><img src="./assets/images/carousel/carousel-4.jpg"></a>
-            <a class="carousel-item responsive-img parallax" href="#five!"><img src="./assets/images/carousel/carousel-5.jpg"></a>
-        </div>
-
 
         <div class="row">
             <!-- SEARCH RESULTS -->
-            <div id="travelResults" class="col s12 m5 offset-m1 card-panel margin-right-1">
+            <div id="travelResults" class="col s12 card-panel">
                 <p class="flow-text white-text">travel results travel results travel results travel results travel
                     results travel results travel results travel results travel results travel results </p>
             </div>
+        </div>
 
-            <!-- LOCAL FLU EVENT RESULTS -->
-            <div id="fluResults" class="col s12 m5 card-panel">
-                <p class="flow-text white-text">flu results flu results flu results flu results flu results flu results
-                    flu results flu results flu results flu results flu results flu results flu results </p>
+
+        <!-- RESTAURANT SEARCH RESULTS IN A CAROUSEL -->
+        <div id="foodContainer" class="row carousel carousel-slider center">
+            <div class="carousel-item" href="#one!">
+                <div class="col s4 rest1">
+                    <img class="responsive-img" src="./assets/images/yelp image results/yelp-image-results-1.jpg">
+                </div>
+                <div id="restDetails1" class="col s8 left-align">
+                    <h2>Name of Restaurant</h2>
+                    <p>Address</p>
+                    <p>$$$</p>
+                    <p>Rating</p>
+                </div>
+            </div>
+            <div class="carousel-item" href="#two!">
+                <div class="col s4 rest2">
+                    <img class="responsive-img" src="./assets/images/yelp image results/yelp-image-results-2.jpg">
+                </div>
+                <div id="restDetails1" class="col s8 left-align">
+                    <h2>Name of Restaurant</h2>
+                    <p>Address</p>
+                    <p>$$$</p>
+                    <p>Rating</p>
+                </div>
+            </div>
+            <div class="carousel-item" href="#three!">
+                <div class="col s4 rest3">
+                    <img class="responsive-img" src="./assets/images/yelp image results/yelp-image-results-3.jpg">
+                </div>
+                <div id="restDetails1" class="col s8 left-align">
+                    <h2>Name of Restaurant</h2>
+                    <p>Address</p>
+                    <p>$$$</p>
+                    <p>Rating</p>
+                </div>
+            </div>
+            <div class="carousel-item" href="#four!">
+                <div class="col s4 rest4">
+                    <img class="responsive-img" src="./assets/images/yelp image results/yelp-image-results-4.jpg">
+                </div>
+                <div id="restDetails1" class="col s8 left-align">
+                    <h2>Name of Restaurant</h2>
+                    <p>Address</p>
+                    <p>$$$</p>
+                    <p>Rating</p>
+                </div>
+            </div>
+            <div class="carousel-item" href="#five!">
+                <div class="col s4 rest5">
+                    <img class="responsive-img" src="./assets/images/yelp image results/yelp-image-results-5.jpg">
+                </div>
+                <div id="restDetails1" class="col s8 left-align">
+                    <h2>Name of Restaurant</h2>
+                    <p>Address</p>
+                    <p>$$$</p>
+                    <p>Rating</p>
+                </div>
             </div>
         </div>
+
     </div>
+
 
     <footer class="page-footer black-text">
         <div class="container">
@@ -155,6 +195,7 @@
     <script>
         $(document).ready(function () {
             $('select').formSelect();
+            $('.collapsible').collapsible();
             $('.carousel.carousel-slider').carousel({
                 fullWidth: true,
                 indicators: true,
@@ -168,3 +209,12 @@
 </body>
 
 </html>
+
+
+<!-- <div class="carousel carousel-slider parallax-container" style="max-height:500px">
+    <a class="carousel-item responsive-img parallax" href="#one!"><img src="./assets/images/carousel/carousel-1.jpg"></a>
+    <a class="carousel-item responsive-img parallax" href="#two!"><img src="./assets/images/carousel/carousel-2.jpg"></a>
+    <a class="carousel-item responsive-img parallax" href="#three!"><img src="./assets/images/carousel/carousel-3.jpg"></a>
+    <a class="carousel-item responsive-img parallax" href="#four!"><img src="./assets/images/carousel/carousel-4.jpg"></a>
+    <a class="carousel-item responsive-img parallax" href="#five!"><img src="./assets/images/carousel/carousel-5.jpg"></a>
+</div> -->
