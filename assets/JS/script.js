@@ -27,7 +27,7 @@ function getDistance(){
         testFood(infoBoxObj);
     })
     function testFood(infoBoxObj){
-        var yelpURL = 'https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?limit=5&term=sushi&location=' + infoBoxObj.endAddress + '&';
+        var yelpURL = 'https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?limit=5&term='+ foodGenre + '&location=' + infoBoxObj.endAddress + '&';
         $.ajax({
             url: yelpURL,
             method: 'GET',
@@ -35,15 +35,18 @@ function getDistance(){
                 authorization: "Bearer glAWlbbO8-yveIvnxPUtI62Kfbv9m3ozQ_YP3CwLIuzY3nRoTJkddG3iJi3TLiiDpzdBffPsdErIXn6Yuv5qdccoUZkEDu39rImm1UTEwPMVYikqkoAPtUdmK-dtYHYx"
             }
         }).then(function(response){
-        console.log(response);
-            for(var i=0; i < response.businesses.length; i++){
-                $('#fluResults').append('<p class="flow-text">' + response.businesses[i].name + '</p>' + '<img class="responsive-img circle" src="' + response.businesses[i].image_url + '"></img>' + '<p class="flow-text">' + response.businesses[i].location.display_address + '</p>' + '<p class="flow-text">' + response.businesses[i].price + '</p>' + '<p class="flow-text">' + response.businesses[i].rating + '</p>');
-            }
-    })}
-}
-    
-    
-    
+            console.log(response);
+            
+            var foodContainer = $('#foodContainer');
+            foodContainer.append('<li class="active">' + '<div class="collapsible-header">' + '<i class="material-icons" style="color: #FC90A4;">push_pin</i>' + response.businesses[0].name + '</div>' + '<div class="collapsible-body row">' + '<div class="col s12 m4">' + '<img id="restImg1" class="responsive-img" src="' + response.businesses[0].image_url + '">' + '</div>' + '<div id="restDetails1" class="col s12 m8">' + '<p class="flow-text">' + response.businesses[0].location.display_address + '</p>' + '<p class="flow-text">' + 'Price Meter: ' + response.businesses[0].price + '</p>' + '<p class="flow-text">' + 'Rating: ' + response.businesses[0].rating + '/5' + '</p>' + '<a class="flow-text" target="_blank" href="' + response.businesses[0].url + '">Visit!</a>'  + '</div' + '<div>' + '</li>');
+            foodContainer.append('<li>' + '<div class="collapsible-header">' + '<i class="material-icons" style="color: #FC90A4;">push_pin</i>' + response.businesses[1].name + '</div>' + '<div class="collapsible-body row">' + '<div class="col s12 m4">' + '<img id="restImg2" class="responsive-img" src="' + response.businesses[1].image_url + '">' + '</div>' + '<div id="restDetails2" class="col s12 m8">' + '<p class="flow-text">' + response.businesses[1].location.display_address + '</p>' + '<p class="flow-text">' + 'Price Meter: ' + response.businesses[1].price + '</p>' + '<p class="flow-text">' + 'Rating: ' + response.businesses[1].rating + '/5' + '</p>' + '<a class="flow-text" target="_blank" href="' + response.businesses[1].url + '">Visit!</a>' + '</div' + '<div>' + '</li>');
+            foodContainer.append('<li>' + '<div class="collapsible-header">' + '<i class="material-icons" style="color: #FC90A4;">push_pin</i>' + response.businesses[2].name + '</div>' + '<div class="collapsible-body row">' + '<div class="col s12 m4">' + '<img id="restImg3" class="responsive-img" src="' + response.businesses[2].image_url + '">' + '</div>' + '<div id="restDetails3" class="col s12 m8">' + '<p class="flow-text">' + response.businesses[2].location.display_address + '</p>' + '<p class="flow-text">' + 'Price Meter: ' + response.businesses[2].price + '</p>' + '<p class="flow-text">' + 'Rating: ' + response.businesses[2].rating + '/5' + '</p>' + '<a class="flow-text" target="_blank" href="' + response.businesses[2].url + '">Visit!</a>' + '</div' + '<div>' + '</li>');
+            foodContainer.append('<li>' + '<div class="collapsible-header">' + '<i class="material-icons" style="color: #FC90A4;">push_pin</i>' + response.businesses[3].name + '</div>' + '<div class="collapsible-body row">' + '<div class="col s12 m4">' + '<img id="restImg4" class="responsive-img" src="' + response.businesses[3].image_url + '">' + '</div>' + '<div id="restDetails4" class="col s12 m8">' + '<p class="flow-text">' + response.businesses[3].location.display_address + '</p>' + '<p class="flow-text">' + 'Price Meter: ' + response.businesses[3].price + '</p>' + '<p class="flow-text">' + 'Rating: ' + response.businesses[3].rating + '/5' + '</p>' + '<a class="flow-text" target="_blank" href="' + response.businesses[3].url + '">Visit!</a>' + '</div' + '<div>' + '</li>');
+            foodContainer.append('<li>' + '<div class="collapsible-header">' + '<i class="material-icons" style="color: #FC90A4;">push_pin</i>' + response.businesses[4].name + '</div>' + '<div class="collapsible-body row">' + '<div class="col s12 m4">' + '<img id="restImg5" class="responsive-img" src="' + response.businesses[4].image_url + '">' + '</div>' + '<div id="restDetails5" class="col s12 m8">' + '<p class="flow-text">' + response.businesses[4].location.display_address + '</p>' + '<p class="flow-text">' + 'Price Meter: ' + response.businesses[4].price + '</p>' + '<p class="flow-text">' + 'Rating: ' + response.businesses[4].rating + '/5' + '</p>' + '<a class="flow-text" target="_blank" href="' + response.businesses[4].url + '">Visit!</a>' + '</div' + '<div>' + '</li>');
+            
+        })}
+    }
+       
     function generateInfoBox(infoBoxObj) {
         var disResult = $('#travelResults').append('<div>').addClass('card-body');
         disResult.empty();
@@ -59,38 +62,3 @@ function getDistance(){
         var tabsEl = tabBarEl.append('<a href="#' + infoBoxObj.endAddress + '">' + infoBoxObj.endAddress + '</a>').addClass('tab col');
         $(tabsEl).wrap('<li class="tab col"></li>');
     }
-    
-    // function generateFoodBox(foodBoxObj) {
-        //     foodResult = $('#fluResults').append('<div>').addClass('card-body');
-        //     foodResult.empty();
-        //     var eachFood = foodResult.append('<p>');
-        //     foodResult.append(eachFood);
-        
-        
-        //     eachFood.append('<p class="flow-text">' + foodBoxObj.foodName + '</p>');
-        // }
-        
-        // var foodBoxObj = { 
-        //     foodName: response.businesses[i].name,
-        //     foodAddress: response.businesses[i].location.display_address,
-        //     foodImage: response.businesses[i].image_url,
-        //     foodPrice: response.businesses[i].price,
-        //     foodRating: response.businesses[i].rating
-        // };
-        
-        
-
-
-// Ending lat and long
-// response.routes[0].legs[0].end_location.lat
-// response.routes[0].legs[0].end_location.lng
-
-
-
-
-
-// Name of business at the very top
-// Image of the business
-// Address of the business
-// Price
-// Rating
