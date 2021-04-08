@@ -77,6 +77,20 @@ footer {
     color: white;
 }
 
+#tab-bar {
+    background-color: #3b4a6b;
+}
+
+.tabs {
+    background-color: #3b4a6b;
+}
+
+.divider {
+    background-color: #FC90A4;
+}
+
+
+
 /* .carousel {
     margin-bottom: 20px;
     padding-bottom: 20px;
