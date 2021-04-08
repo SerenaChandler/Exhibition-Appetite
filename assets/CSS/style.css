@@ -89,7 +89,10 @@ footer {
     background-color: #FC90A4;
 }
 
-
+#prevSearch {
+    background-color: #3b4a6b;
+    height: 50px;
+}
 
 /* .carousel {
     margin-bottom: 20px;
