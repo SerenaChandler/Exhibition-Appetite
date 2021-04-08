@@ -1,22 +1,42 @@
 var searchBtn = $(".btn");
-searchBtn.on('click', () => getDistance())
+// var recentSearch = [];
 
+searchBtn.on('click', () => getDistance());
 
 function getDistance(){
     
-    var origin = $('.originCity').val();
-    var oState = $('.originState').val();
-    var dCity = $('.destCity').val();
-    var dState = $('.destState').val();
-    var foodGenre = $('.foodGenre').val();
+    var requirements = {
+        origin: $('.originCity').val(),
+        oState: $('.originState').val(),
+        dCity: $('.destCity').val(),
+        dState: $('.destState').val(),
+        foodGenre: $('.foodGenre').val()
+    };
     
-    var googleAPI = 'https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/directions/json?origin=' + origin + ',' + oState + '&destination=' + dCity + ',' + dState + '&key=AIzaSyCBZc_OSBv_nae-DTj4IXZ1x7Zb00XzcRQ';
+    var googleAPI = 'https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/directions/json?origin=' + requirements.origin + ',' + requirements.oState + '&destination=' + requirements.dCity + ',' + requirements.dState + '&key=AIzaSyCBZc_OSBv_nae-DTj4IXZ1x7Zb00XzcRQ';
+    
+    
     
     $.ajax({
         url: googleAPI,
         method: 'GET'
     }).then(function(response){
         console.log(response);
+        
+        // var searchName = $('#tab-bar').addClass('list-item');
+        // var localStore = JSON.parse(localStorage.getItem('recentSearches')) || [];
+        // localStore.push(requirements);
+        // var storage = [...new Set(localStore)];
+        // if(storage.length === localStore.length) {
+        //     var listItem = $('<li>').text(requirements.origin + ' To: '  + requirements.dCity + ' for some: ' + requirements.foodGenre);
+        //     listItem.on('click', function(event){
+        //         getDistance($(this).text());
+        //     })
+        // searchName.append(listItem);
+        // localStorage.setItem('recentSearches', JSON.stringify(localStore));
+        // }
+            // '<li>' + requirements.origin + ' To: '  + requirements.dCity + ' for some: ' + requirements.foodGenre + '</li>');
+
         var infoBoxObj = {
           startAddress: response.routes[0].legs[0].start_address,
           endAddress: response.routes[0].legs[0].end_address,
@@ -27,7 +47,7 @@ function getDistance(){
         testFood(infoBoxObj);
     })
     function testFood(infoBoxObj){
-        var yelpURL = 'https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?limit=5&term='+ foodGenre + '&location=' + infoBoxObj.endAddress + '&';
+        var yelpURL = 'https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?limit=5&term='+ requirements.foodGenre + '&location=' + infoBoxObj.endAddress + '&';
         $.ajax({
             url: yelpURL,
             method: 'GET',
@@ -54,11 +74,25 @@ function getDistance(){
         var partResult = disResult.append('<p>');
         disResult.append(partResult);
         
-        partResult.append('<p class="flow-text">' + '<i class="material-icons">person_pin</i>' + 'Your starting location: ' + infoBoxObj.startAddress + '</p>');
-        partResult.append('<p class="flow-text">' + '<i class="material-icons">place</i>' + '</i>' + 'Your ending location: ' + infoBoxObj.endAddress + '</p>');
-        partResult.append('<p class="flow-text">' + '<i class="material-icons">drive_eta</i>' + 'Drive time: ' + infoBoxObj.travelTime + '</p>');
-        partResult.append('<p class="flow-text">' + '<i class="material-icons">arrow_forward</i>' + 'Distance: ' + infoBoxObj.travelDist + '</p>');
-        var tabBarEl = $('#tab-bar').append('<ul>').addClass('tabs');
-        var tabsEl = tabBarEl.append('<a href="#' + infoBoxObj.endAddress + '">' + infoBoxObj.endAddress + '</a>').addClass('tab col');
-        $(tabsEl).wrap('<li class="tab col"></li>');
+        partResult.append('<p class="flow-text">' + '<i class="material-icons">person_pin</i>' + '  ' + infoBoxObj.startAddress + '</p>');
+        partResult.append('<p class="flow-text">' + '<i class="material-icons">place</i>' + '</i>' + '  ' + infoBoxObj.endAddress + '</p>');
+        partResult.append('<p class="flow-text">' + '<i class="material-icons">drive_eta</i>' + '  ' + infoBoxObj.travelTime + '</p>');
+        partResult.append('<p class="flow-text">' + '<i class="material-icons">arrow_forward</i>' + '  ' + infoBoxObj.travelDist + '</p>');
+        // var tabBarEl = $('#tab-bar').append('<ul>').addClass('tabs');
+        // var tabsEl = tabBarEl.append('<a href="#' + infoBoxObj.endAddress + '">' + infoBoxObj.endAddress + '</a>').addClass('tab col');
+        // $(tabsEl).wrap('<li class="tab col"></li>');
     }
+    
+    // function renderList() {
+    //     var localStore = JSON.parse(localStorage.getItem('recentSearches')) || [];
+    //     var searchName = $('#tab-bar').addClass('list-item');
+    //     for(i = 0; i < localStore.length; i++) {
+    //         var listItem = $('<li>').text();
+    //         listItem.on('click', function(event){
+    //             getDistance($(this).text());
+    //         })
+    //         searchName.append(listItem);
+    
+    //     }
+    // }
+    // renderList();
