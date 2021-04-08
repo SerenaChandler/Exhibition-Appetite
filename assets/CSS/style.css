@@ -38,10 +38,6 @@ h1 {
     font-family: 'New Tegomin', serif;
 }
 
-/* .input-field {
-    font-family: 'New Tegomin', serif;
-} */
-
 #aboutUs {
     height: 100%;
 }
@@ -58,10 +54,6 @@ footer {
     background-color: #3b4a6b;
 }
 
-#fluResults {
-    background-color: #3b4a6b;
-}
-
 .page-footer {
     background-color: #FC90A4;
 }
@@ -72,18 +64,20 @@ footer {
 
 .collapsible {
     border-width: 2px;
+    color: white;
 }
 
 .collapsible-header {
-    background-color: #45577D;
-    color: #FC90A4;
+    background-color: #3b4a6b;
+    
 }
 
 .collapsible-body {
-    background-color: white;
+    background-color: #45577D;
+    color: white;
 }
 
-.carousel {
+/* .carousel {
     margin-bottom: 20px;
     padding-bottom: 20px;
     display: flex;
@@ -99,8 +93,4 @@ footer {
 
 .carousel .indicators .indicator-item {
     background-color: #FC90A4;
-}
-
-/* #foodcontainer {
-    height: auto;
 } */
