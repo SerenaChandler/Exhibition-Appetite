@@ -53,8 +53,8 @@
                     <label for="destination-state"></label>
                 </div>
                 </form>
-                <button class="btn btn-large waves-effect waves-light col s12 black-text" type="submit" name="action"><i
-                        class="material-icons">search</i> Search</button>
+                <button class="btn btn-large waves-effect waves-light col s12 black-text hoverable" type="submit"
+                    name="action"><i class="material-icons">search</i> Search</button>
             </div>
 
             <!-- ABOUT US CONTAINER -->
@@ -96,64 +96,79 @@
         </div>
 
 
-        <!-- RESTAURANT SEARCH RESULTS IN A CAROUSEL -->
-        <div id="foodContainer" class="row carousel carousel-slider center">
-            <div class="carousel-item" href="#one!">
-                <div class="col s4 rest1">
-                    <img class="responsive-img" src="./assets/images/yelp image results/yelp-image-results-1.jpg">
+        <!-- COLLAPSIBLE CONTAINER FOR RESTAURANT SEARCH RESULTS -->
+        <ul id="foodContainer" class="collapsible">
+            <li class="active">
+                <div class="collapsible-header"><i class="material-icons">push_pin</i>Name of Restaurant</div>
+                <div class="collapsible-body row">
+                    <div class="col s12 m4">
+                        <img id="restImg1" class="responsive-img"
+                            src="./assets/images/yelp image results/yelp-image-results-1.jpg">
+                    </div>
+                    <div id="restDetails1" class="col s12 m8">
+                        <p>Address</p>
+                        <p>$$$</p>
+                        <p>Rating</p>
+                    </div>
                 </div>
-                <div id="restDetails1" class="col s8 left-align">
-                    <h2>Name of Restaurant</h2>
-                    <p>Address</p>
-                    <p>$$$</p>
-                    <p>Rating</p>
+            </li>
+            <li>
+                <div class="collapsible-header"><i class="material-icons">push_pin</i>Name of Restaurant</div>
+                <div class="collapsible-body row">
+                    <div class="col s12 m4">
+                        <img id="restImg2" class="responsive-img"
+                            src="./assets/images/yelp image results/yelp-image-results-2.jpg">
+                    </div>
+                    <div id="restDetails2"  class="col s12 m8">
+                        <p>Address</p>
+                        <p>$$$</p>
+                        <p>Rating</p>
+                    </div>
                 </div>
-            </div>
-            <div class="carousel-item" href="#two!">
-                <div class="col s4 rest2">
-                    <img class="responsive-img" src="./assets/images/yelp image results/yelp-image-results-2.jpg">
+            </li>
+            <li>
+                <div class="collapsible-header"><i class="material-icons">push_pin</i>Name of Restaurant</div>
+                <div class="collapsible-body row">
+                    <div class="col s12 m4">
+                        <img id="restImg3" class="responsive-img"
+                            src="./assets/images/yelp image results/yelp-image-results-3.jpg">
+                    </div>
+                    <div id="restDetails3" class="col s12 m8">
+                        <p>Address</p>
+                        <p>$$$</p>
+                        <p>Rating</p>
+                    </div>
                 </div>
-                <div id="restDetails1" class="col s8 left-align">
-                    <h2>Name of Restaurant</h2>
-                    <p>Address</p>
-                    <p>$$$</p>
-                    <p>Rating</p>
+            </li>
+            <li>
+                <div class="collapsible-header"><i class="material-icons">push_pin</i>Name of Restaurant</div>
+                <div class="collapsible-body row">
+                    <div class="col s12 m4">
+                        <img id="restImg4" class="responsive-img"
+                            src="./assets/images/yelp image results/yelp-image-results-4.jpg">
+                    </div>
+                    <div id="restDetails4" class="col s12 m8">
+                        <p>Address</p>
+                        <p>$$$</p>
+                        <p>Rating</p>
+                    </div>
                 </div>
-            </div>
-            <div class="carousel-item" href="#three!">
-                <div class="col s4 rest3">
-                    <img class="responsive-img" src="./assets/images/yelp image results/yelp-image-results-3.jpg">
+            </li>
+            <li>
+                <div class="collapsible-header"><i class="material-icons">push_pin</i>Name of Restaurant</div>
+                <div class="collapsible-body row">
+                    <div class="col s12 m4">
+                        <img id="restImg5" class="responsive-img"
+                            src="./assets/images/yelp image results/yelp-image-results-5.jpg">
+                    </div>
+                    <div id="restDetails5" class="col s12 m8">
+                        <p>Address</p>
+                        <p>$$$</p>
+                        <p>Rating</p>
+                    </div>
                 </div>
-                <div id="restDetails1" class="col s8 left-align">
-                    <h2>Name of Restaurant</h2>
-                    <p>Address</p>
-                    <p>$$$</p>
-                    <p>Rating</p>
-                </div>
-            </div>
-            <div class="carousel-item" href="#four!">
-                <div class="col s4 rest4">
-                    <img class="responsive-img" src="./assets/images/yelp image results/yelp-image-results-4.jpg">
-                </div>
-                <div id="restDetails1" class="col s8 left-align">
-                    <h2>Name of Restaurant</h2>
-                    <p>Address</p>
-                    <p>$$$</p>
-                    <p>Rating</p>
-                </div>
-            </div>
-            <div class="carousel-item" href="#five!">
-                <div class="col s4 rest5">
-                    <img class="responsive-img" src="./assets/images/yelp image results/yelp-image-results-5.jpg">
-                </div>
-                <div id="restDetails1" class="col s8 left-align">
-                    <h2>Name of Restaurant</h2>
-                    <p>Address</p>
-                    <p>$$$</p>
-                    <p>Rating</p>
-                </div>
-            </div>
-        </div>
+            </li>
+        </ul>
 
     </div>
 
@@ -217,4 +232,65 @@
     <a class="carousel-item responsive-img parallax" href="#three!"><img src="./assets/images/carousel/carousel-3.jpg"></a>
     <a class="carousel-item responsive-img parallax" href="#four!"><img src="./assets/images/carousel/carousel-4.jpg"></a>
     <a class="carousel-item responsive-img parallax" href="#five!"><img src="./assets/images/carousel/carousel-5.jpg"></a>
+</div> -->
+
+
+
+<!-- RESTAURANT SEARCH RESULTS IN A CAROUSEL -->
+<!-- <div id="foodContainer" class="row carousel carousel-slider center hoverable">
+    <div class="carousel-item" href="#one!">
+        <div class="col s12 m4 rest1">
+            <img id="restimg1" class="responsive-img" src="./assets/images/yelp image results/yelp-image-results-1.jpg">
+        </div>
+        <div id="restDetails1" class="col s12 m8 left-align">
+            <h2>Name of Restaurant</h2>
+            <p>Address</p>
+            <p>$$$</p>
+            <p>Rating</p>
+        </div>
+    </div>
+    <div class="carousel-item" href="#two!">
+        <div class="col s4 rest2">
+            <img class="responsive-img" src="./assets/images/yelp image results/yelp-image-results-2.jpg">
+        </div>
+        <div id="restDetails1" class="col s12 m8 left-align">
+            <h2>Name of Restaurant</h2>
+            <p>Address</p>
+            <p>$$$</p>
+            <p>Rating</p>
+        </div>
+    </div>
+    <div class="carousel-item" href="#three!">
+        <div class="col s4 rest3">
+            <img class="responsive-img" src="./assets/images/yelp image results/yelp-image-results-3.jpg">
+        </div>
+        <div id="restDetails1" class="col s8 left-align">
+            <h2>Name of Restaurant</h2>
+            <p>Address</p>
+            <p>$$$</p>
+            <p>Rating</p>
+        </div>
+    </div>
+    <div class="carousel-item" href="#four!">
+        <div class="col s4 rest4">
+            <img class="responsive-img" src="./assets/images/yelp image results/yelp-image-results-4.jpg">
+        </div>
+        <div id="restDetails1" class="col s8 left-align">
+            <h2>Name of Restaurant</h2>
+            <p>Address</p>
+            <p>$$$</p>
+            <p>Rating</p>
+        </div>
+    </div>
+    <div class="carousel-item" href="#five!">
+        <div class="col s4 rest5">
+            <img class="responsive-img" src="./assets/images/yelp image results/yelp-image-results-5.jpg">
+        </div>
+        <div id="restDetails1" class="col s8 left-align">
+            <h2>Name of Restaurant</h2>
+            <p>Address</p>
+            <p>$$$</p>
+            <p>Rating</p>
+        </div>
+    </div>
 </div> -->
