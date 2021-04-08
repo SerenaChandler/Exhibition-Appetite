@@ -91,9 +91,9 @@
 
 
         <!-- TABS FOR PREVIOUS SEARCH RESULTS -->
-        <div class="row white">
+        <!-- <div class="row white">
             <div id="tab-bar" class="col s12">
-                <ul class="tabs" style="overflow-x: hidden">
+                <ul class="tabs" style="overflow-x: hidden"> -->
                     <!-- <li class="tab col"><a href="#search1">Los Angeles</a></li>
                     <li class="tab col"><a href="#search2">Las Vegas</a></li>
                     <li class="tab col"><a href="#search3">Vacaville</a></li>
@@ -101,10 +101,18 @@
                     <li class="tab col"><a href="#search5">Cerritos</a></li>
                     <li class="tab col"><a href="#search6">Henderson</a></li>
                     <li class="tab col"><a href="#search7">San Francisco</a></li> -->
-                </ul>
+                <!-- </ul>
             </div>
-        </div>
+        </div> -->
 
+
+        <div id="prevSearch" class="row valign-wrapper">
+                <a class="col s12 m1 waves-effect waves-light btn" data-prevSearch>button</a>
+                <a class="col s12 m1 waves-effect waves-light btn" data-prevSearch>button</a>
+                <a class="col s12 m1 waves-effect waves-light btn" data-prevSearch>button</a>
+                <a class="col s12 m1 waves-effect waves-light btn" data-prevSearch>button</a>
+                <a class="col s12 m1 waves-effect waves-light btn" data-prevSearch>button</a>
+        </div>
 
         <!-- SEARCH HISTORY TABS -->
         <div class="row">
@@ -163,24 +171,25 @@
 
 
     <!-- JQUERY SCRIPT -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" 
+        integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" 
+        crossorigin="anonymous">
+    </script>
     <!-- MATERIALIZE CSS COMPILED AND MINIFIED JAVASCRIPT -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
         <!-- MATERIALIZE CSS INIT FUNCTIONS -->
-        <script>
-            $(document).ready(function () {
-                $('select').formSelect();
-                $('.collapsible').collapsible();
-                $('.carousel.carousel-slider').carousel({
-                    fullWidth: true,
-                    indicators: true,
-                });
-                $('.tabs').tabs();
-                $('.parallax').parallax();
+    <script>
+        $(document).ready(function () {
+            $('.parallax').parallax();
+            $('.carousel.carousel-slider').carousel({
+                fullWidth: true,
+                indicators: true,
             });
-        </script>
+            $('select').formSelect();
+            $('.collapsible').collapsible();
+            $('.tabs').tabs();
+        });
+    </script>
     <!-- JS SCRIPT -->
     <script src="./assets/JS/script.js"></script>
 </body>
@@ -188,62 +197,3 @@
 </html>
 
 
-
-<!-- RESTAURANT SEARCH RESULTS IN A CAROUSEL -->
-<!-- <div id="foodContainer" class="row carousel carousel-slider center hoverable">
-    <div class="carousel-item" href="#one!">
-        <div class="col s12 m4 rest1">
-            <img id="restimg1" class="responsive-img" src="./assets/images/yelp image results/yelp-image-results-1.jpg">
-        </div>
-        <div id="restDetails1" class="col s12 m8 left-align">
-            <h2>Name of Restaurant</h2>
-            <p>Address</p>
-            <p>$$$</p>
-            <p>Rating</p>
-        </div>
-    </div>
-    <div class="carousel-item" href="#two!">
-        <div class="col s4 rest2">
-            <img class="responsive-img" src="./assets/images/yelp image results/yelp-image-results-2.jpg">
-        </div>
-        <div id="restDetails1" class="col s12 m8 left-align">
-            <h2>Name of Restaurant</h2>
-            <p>Address</p>
-            <p>$$$</p>
-            <p>Rating</p>
-        </div>
-    </div>
-    <div class="carousel-item" href="#three!">
-        <div class="col s4 rest3">
-            <img class="responsive-img" src="./assets/images/yelp image results/yelp-image-results-3.jpg">
-        </div>
-        <div id="restDetails1" class="col s8 left-align">
-            <h2>Name of Restaurant</h2>
-            <p>Address</p>
-            <p>$$$</p>
-            <p>Rating</p>
-        </div>
-    </div>
-    <div class="carousel-item" href="#four!">
-        <div class="col s4 rest4">
-            <img class="responsive-img" src="./assets/images/yelp image results/yelp-image-results-4.jpg">
-        </div>
-        <div id="restDetails1" class="col s8 left-align">
-            <h2>Name of Restaurant</h2>
-            <p>Address</p>
-            <p>$$$</p>
-            <p>Rating</p>
-        </div>
-    </div>
-    <div class="carousel-item" href="#five!">
-        <div class="col s4 rest5">
-            <img class="responsive-img" src="./assets/images/yelp image results/yelp-image-results-5.jpg">
-        </div>
-        <div id="restDetails1" class="col s8 left-align">
-            <h2>Name of Restaurant</h2>
-            <p>Address</p>
-            <p>$$$</p>
-            <p>Rating</p>
-        </div>
-    </div>
-</div> -->
