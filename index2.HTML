@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta chartset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="./assets/CSS/style.css">
+    <title>Expedition Appetite</title>
+</head>
+
+<body>
+
+    <!-- PAGE HEADER -->
+    <header class="page-header white-text">
+        <h1 class="">Expedition Appetite</h1>
+    </header>
+
+    <!-- MAIN CONTAINER -->
+    <!-- HERO IMAGE -->
+    <div class="container">
+        <div class="carousel carousel-slider parallax-container" style="max-height:600px">
+            <a class="carousel-item responsive-img parallax" href="#one!"><img src="./assets/images/carousel/carousel-1.jpg"></a>
+            <a class="carousel-item responsive-img parallax" href="#two!"><img src="./assets/images/carousel/carousel-2.jpg"></a>
+            <a class="carousel-item responsive-img parallax" href="#three!"><img src="./assets/images/carousel/carousel-3.jpg"></a>
+            <a class="carousel-item responsive-img parallax" href="#four!"><img src="./assets/images/carousel/carousel-4.jpg"></a>
+            <a class="carousel-item responsive-img parallax" href="#five!"><img src="./assets/images/carousel/carousel-5.jpg"></a>
+            <a class="carousel-item responsive-img parallax" href="#six!"><img src="./assets/images/carousel/carousel-6.jpg"></a>
+            <a class="carousel-item responsive-img parallax" href="#seven!"><img src="./assets/images/carousel/carousel-7.jpg"></a>
+            <a class="carousel-item responsive-img parallax" href="#eight!"><img src="./assets/images/carousel/carousel-8.jpg"></a>
+            <a class="carousel-item responsive-img parallax" href="#nine!"><img src="./assets/images/carousel/carousel-9.jpg"></a>
+            <a class="carousel-item responsive-img parallax" href="#ten!"><img src="./assets/images/carousel/carousel-10.jpg"></a>
+            <a class="carousel-item responsive-img parallax" href="#eleven!"><img src="./assets/images/carousel/carousel-11.jpg"></a>
+            <a class="carousel-item responsive-img parallax" href="#twelve!"><img src="./assets/images/carousel/carousel-12.jpg"></a>
+        </div>
+
+        <!-- SEARCH CONTAINER -->
+        <div class="row">
+            <div id="searchArea" class="col s12 m4 l4 white-text">
+                <h3>Search Area</h3>
+                <form>
+                    <div class="input-field">
+                        <input class="originCity white-text" type="text" placeholder="Origin City">
+                        <label for="origin-city"></label>
+                    </div>
+                    <div class="input-field">
+                        <input class="originState white-text" type="text" placeholder="Origin State">
+                        <label for="origin-state"></label>
+                    </div>
+                    <div class="input-field">
+                        <input class="destCity white-text" type="text" placeholder="Destination City">
+                        <label for="desttination-city"></label>
+                    </div>
+                    <div class="input-field">
+                        <input class="destState white-text" type="text" placeholder="Destination State">
+                        <label for="destination-state"></label>
+                    </div>
+                </form>
+                <div class="input-field">
+                    <input class="foodGenre white-text" type="text" placeholder="Favorite Food">
+                    <label for="destination-state"></label>
+                </div>
+                </form>
+                <button class="btn btn-large waves-effect waves-light col s12 black-text hoverable" type="submit"
+                    name="action"><i class="material-icons">search</i> Search</button>
+            </div>
+
+
+            <!-- ABOUT US CONTAINER -->
+            <div id="aboutUs" class="row white-text">
+                <div class="col s12 m8 l8">
+                    <h3>Are you traveling? Stay safe by using our application to check
+                        the local flu events to the place your traveling to.
+                    </h3>
+                    <p>This is super easy to use just enter your destination and the date your are arriving.
+                        You can also tell us how you are traveling there and we will give you the best route to travel.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <br>
+        <div class="divider"></div>
+        <br>
+
+
+        <!-- TABS FOR PREVIOUS SEARCH RESULTS -->
+        <div class="row white">
+            <div id="tab-bar" class="col s12">
+                <ul class="tabs" style="overflow-x: hidden">
+                    <li class="tab col"><a href="#search1">Los Angeles</a></li>
+                    <li class="tab col"><a href="#search2">Las Vegas</a></li>
+                    <li class="tab col"><a href="#search3">Vacaville</a></li>
+                    <li class="tab col"><a href="#search4">Long Beach</a></li>
+                    <li class="tab col"><a href="#search5">Cerritos</a></li>
+                    <li class="tab col"><a href="#search6">Henderson</a></li>
+                    <li class="tab col"><a href="#search7">San Francisco</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <!-- SEARCH HISTORY TABS -->
+        <div class="row">
+            <div id="travelResults" class="col s12 card-panel">
+                <p class="flow-text white-text">travel results travel results travel results travel results travel
+                    results travel results travel results travel results travel results travel results </p>
+            </div>
+        </div>
+
+
+        <!-- DISTANCE RESULTS -->
+        <div class="row">
+            <div id="travelResults" class="col s12 card-panel">
+
+                <!-- JAVASCRIPT WILL RENDER UPON USER SEARCH -->
+
+            </div>
+        </div>
+
+
+        <!-- COLLAPSIBLE CONTAINER FOR RESTAURANT SEARCH RESULTS -->
+        <ul id="foodContainer" class="collapsible">
+
+                <!-- JAVASCRIPT WILL RENDER UPON USER SEARCH -->
+
+        </ul>
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer class="page-footer black-text">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="">Find out more about the creators of this page.</h5>
+                    <p class="">You can use rows and columns here to organize your footer
+                        content.
+                    </p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="">Visit our Creators GitHub pages!</h5>
+                    <ul>
+                        <li><a class="" href="https://github.com/SerenaChandler" target="_blank">Serena</a></li>
+                        <li><a class="" href="https://github.com/dnovelli1" target="_blank">Jake</a></li>
+                        <li><a class="" href="https://github.com/cheng21tang" target="_blank">Cheng</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container black-text">
+                © 2021 Copyright Text
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- JQUERY SCRIPT -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous"></script>
+    <!-- MATERIALIZE CSS COMPILED AND MINIFIED JAVASCRIPT -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <!-- MATERIALIZE CSS INIT FUNCTIONS -->
+        <script>
+            $(document).ready(function () {
+                $('select').formSelect();
+                $('.collapsible').collapsible();
+                $('.carousel.carousel-slider').carousel({
+                    fullWidth: true,
+                    indicators: true,
+                });
+                $('.tabs').tabs();
+                $('.parallax').parallax();
+            });
+        </script>
+    <!-- JS SCRIPT -->
+    <script src="./assets/JS/script.js"></script>
+</body>
+
+</html>
+
+
+
+<!-- RESTAURANT SEARCH RESULTS IN A CAROUSEL -->
+<!-- <div id="foodContainer" class="row carousel carousel-slider center hoverable">
+    <div class="carousel-item" href="#one!">
+        <div class="col s12 m4 rest1">
+            <img id="restimg1" class="responsive-img" src="./assets/images/yelp image results/yelp-image-results-1.jpg">
+        </div>
+        <div id="restDetails1" class="col s12 m8 left-align">
+            <h2>Name of Restaurant</h2>
+            <p>Address</p>
+            <p>$$$</p>
+            <p>Rating</p>
+        </div>
+    </div>
+    <div class="carousel-item" href="#two!">
+        <div class="col s4 rest2">
+            <img class="responsive-img" src="./assets/images/yelp image results/yelp-image-results-2.jpg">
+        </div>
+        <div id="restDetails1" class="col s12 m8 left-align">
+            <h2>Name of Restaurant</h2>
+            <p>Address</p>
+            <p>$$$</p>
+            <p>Rating</p>
+        </div>
+    </div>
+    <div class="carousel-item" href="#three!">
+        <div class="col s4 rest3">
+            <img class="responsive-img" src="./assets/images/yelp image results/yelp-image-results-3.jpg">
+        </div>
+        <div id="restDetails1" class="col s8 left-align">
+            <h2>Name of Restaurant</h2>
+            <p>Address</p>
+            <p>$$$</p>
+            <p>Rating</p>
+        </div>
+    </div>
+    <div class="carousel-item" href="#four!">
+        <div class="col s4 rest4">
+            <img class="responsive-img" src="./assets/images/yelp image results/yelp-image-results-4.jpg">
+        </div>
+        <div id="restDetails1" class="col s8 left-align">
+            <h2>Name of Restaurant</h2>
+            <p>Address</p>
+            <p>$$$</p>
+            <p>Rating</p>
+        </div>
+    </div>
+    <div class="carousel-item" href="#five!">
+        <div class="col s4 rest5">
+            <img class="responsive-img" src="./assets/images/yelp image results/yelp-image-results-5.jpg">
+        </div>
+        <div id="restDetails1" class="col s8 left-align">
+            <h2>Name of Restaurant</h2>
+            <p>Address</p>
+            <p>$$$</p>
+            <p>Rating</p>
+        </div>
+    </div>
+</div> -->
