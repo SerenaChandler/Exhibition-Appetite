@@ -10,6 +10,7 @@ searchBtn.on('click', () => getDistance());
 // Begins function to retrieve the distance.
 function getDistance(){
     
+    // Requirements object for all inputs from the user
     var requirements = {
         origin: $('.originCity').val(),
         oState: $('.originState').val(),
