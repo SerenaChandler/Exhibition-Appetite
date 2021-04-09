@@ -34,8 +34,8 @@ We started with a general idea of the page layout knowing that we would need:
 1. Form for user input
 2. Modal for user validation
 3. Buttons for previous search history
-4. A <div> for the travel details
-5. A <div> for the food details
+4. A `<div>` for the travel details
+5. A `<div>` for the food details
 
 
 ![wireframe-vs-final-product](./assets/wireframe/wireframe-vs-final-product.PNG)
