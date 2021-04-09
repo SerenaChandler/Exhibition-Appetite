@@ -1,15 +1,83 @@
-# Project 1 "Expedition Appetite"
+# Expedition Appetite
 
-## Summary of assignment
-We were tasked with creatig a new web program from thr ground up. We had a few pre requestists that we had to fulfil, namely
+This is our project from our group assignment and the idea we came up with was our application **Expedition Appetite**.
 
--2 different servierside APIs had to be used, in this case we used both Good Maps's API, as well as the Yelp API
+describe our program
 
--we had to use a new framework. Previously we had experience with bootstrap, but for this assignment we had to implement a new framework
 
--2 different libraries also had to be implemented 
+## Objective of Project
+this was a class assignment it was really about learning what it takes to complete a project start to finish
+
+
+
+
+## Acceptance Criteria
+
+
+
+
+
+## User Stories
+
+Here are the User Stories we used to create our application.
+
+![UserStory-1](./assets/user-story/user-story-1.png)
+
+
+
+
+
+
+## Technologies & Features Used
+## Demo
+## Explaination of the code
+
+
+
+
+
+## API Used
+
+
+
+
+
+## Deployed Link
+
+
+
+
+
+## Future Development
+
+
+
+
+
+## Contributors
+LinkedIn Profile
+GitHub Profile
+
+
+
+## Workflow Structure
+
+
+
+
+
+### License
+
+
+
+
+### Acknowledgements
+
+
+
 
 ## getting started
+To get started, you can download the entire repository and start by opening the **index.html**
 -before we even thought about coding, a large portion of the project started with planning.
 
 -from the get go, we had planned on using a google maps API, although the original idea was to have it work with flu data, and give the user data on whether it was safe to travel.
