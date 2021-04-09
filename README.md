@@ -1,13 +1,13 @@
 # Expedition Appetite
 
-This is our project from our group assignment and the idea we came up with was our application **Expedition Appetite**.
+Expedition Appetite is an application a user would use to get travel details/directions and find nearby food options like restaurants, near your destination. The user would first enter their *travel details* and tell us what *type of food* they were interested in. Then we would return back their travel details from a Google API and restaurant details of the Yelp API.
 
-describe our program
+Now the user has their travel itinerary and options for places to eat!
 
 
 ## Objective of Project
-this was a class assignment it was really about learning what it takes to complete a project start to finish
 
+This is our project of a group assignment which included the team members Jake Novelli, Serena Chandler, and Cheng Tang.
 
 
 
@@ -22,13 +22,45 @@ this was a class assignment it was really about learning what it takes to comple
 Here are the User Stories we used to create our application.
 
 ![UserStory-1](./assets/user-story/user-story-1.png)
+![UserStory-1](./assets/user-story/user-story-2.png)
 
+
+
+
+
+## Wireframe vs Final Product
+
+We started with a general idea of the page layout knowing that we would need:
+1. Form for user input
+2. Modal for user validation
+3. Buttons for previous search history
+4. A <div> for the travel details
+5. A <div> for the food details
+
+
+![initialWireframe](./assets/wireframe/wireframe-1.png)
+![layout-final-product](./assets/wireframe/layout-final-product.PNG)
 
 
 
 
 
 ## Technologies & Features Used
+
+**High Overview of Technologies used**
+[Materialize CSS](https://materializecss.com/)
+[jQuery](https://jquery.com/)
+[SweetAlert.js](https://sweetalert.js.org/)
+
+
+**Materialize CSS**
+We decided to use Materialize CSS for our framework due to the design language/styling, the simplicity of their documentation, and the ease of implementating their features.
+
+
+
+
+
+
 ## Demo
 ## Explaination of the code
 
