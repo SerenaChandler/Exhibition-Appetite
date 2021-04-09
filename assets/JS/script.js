@@ -9,7 +9,7 @@ function renderButtons() {
     }
 }
 
-// .history { width: auto } in css
+
 renderButtons();
 
 // This listens for a click on the search button to begin the function
