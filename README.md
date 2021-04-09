@@ -38,8 +38,8 @@ We started with a general idea of the page layout knowing that we would need:
 5. A <div> for the food details
 
 
-![initialWireframe](./assets/wireframe/wireframe-1.png)
-![layout-final-product](./assets/wireframe/layout-final-product.PNG)
+![wireframe-vs-final-product](./assets/wireframe/wireframe-vs-final-product.PNG)
+
 
 
 
