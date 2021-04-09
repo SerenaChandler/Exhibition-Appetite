@@ -21,8 +21,8 @@ This is our project of a group assignment which included the team members Jake N
 
 Here are the User Stories we used to create our application.
 
-![UserStory-1](./assets/user-story/user-story-1.png)
-![UserStory-1](./assets/user-story/user-story-2.png)
+![UserStory-1](./assets/user-story/user-story-1.png) ![UserStory-1](./assets/user-story/user-story-2.png)
+
 
 
 
