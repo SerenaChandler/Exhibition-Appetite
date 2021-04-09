@@ -31,9 +31,9 @@ Here are the User Stories we used to create our application.
 ## Wireframe vs Final Product
 
 We started with a general idea of the page layout knowing that we would need:
-1. Form for user input
-2. Modal for user validation
-3. Buttons for previous search history
+1. A `<form>` for user input
+2. A `<modal>` for user validation
+3. Several `<button>` for previous search history
 4. A `<div>` for the travel details
 5. A `<div>` for the food details
 
