@@ -93,7 +93,7 @@ function getDistance(){
             }).then(function(response){
                 console.log(response);
                 // Appending list items for previous searches
-                searchHist.append('<a class="col s12 m1 waves-effect waves-light btn history" data-prevSearch="search1">' + requirements.dCity + ', ' + requirements.dState + '</a>');
+                searchHist.append('<a class="col waves-effect waves-light btn history" style="width: auto" data-prevSearch="search1">' + requirements.dCity + ', ' + requirements.dState + '</a>');
 
                 // Created object for all responses needed from user
                 var infoBoxObj = {
