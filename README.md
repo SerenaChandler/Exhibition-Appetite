@@ -21,11 +21,7 @@ This is our project of a group assignment which included the team members Jake N
 
 Here are the User Stories we used to create our application.
 
-![UserStory-1](./assets/user-story/user-story-1.png) ![UserStory-1](./assets/user-story/user-story-2.png)
-
-
-
-
+![UserStory-1](./assets/user-story/user-stories.png)
 
 
 ## Wireframe vs Final Product
@@ -37,12 +33,7 @@ We started with a general idea of the page layout knowing that we would need:
 4. A `<div>` for the travel details
 5. A `<div>` for the food details
 
-
 ![wireframe-vs-final-product](./assets/wireframe/wireframe-vs-final-product.PNG)
-
-
-
-
 
 
 ## Technologies & Features Used
@@ -57,6 +48,27 @@ We started with a general idea of the page layout knowing that we would need:
 We decided to use Materialize CSS for our framework due to the design language/styling, the simplicity of their documentation, and the ease of implementating their features.
 
 
+**Media breakpoints**
+Materialize CSS made has a get structure for their page layout and made it easy to implement **media breakpoints**
+
+In our application, we employed 2 different breakpoints:
+    - Medium - 33%
+    - Small - 100%
+
+Below is a sample of our code and how our application looks when resized:
+
+![breakpoints](./assets/images/media-screens/media-screen-breakpoints.gif)
+
+```
+<div class="row">
+            <div id="searchArea" class="col s12 m4 l4 white-text">
+                <h3>Search Area</h3>
+                <form>
+                    <div class="input-field">
+                        <input class="originCity white-text" type="text" placeholder="Origin City">
+                        <label for="origin-city"></label>
+                    </div>
+```
 
 
 
