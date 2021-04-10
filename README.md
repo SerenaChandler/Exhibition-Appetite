@@ -21,6 +21,7 @@ This project is a group assignment which included the team members **Jake Novell
 -   Be `responsive`
 <br>
 This offered us a challenge but also freedom to research and decide on technologies we were interested in learning.
+<br>
 
 ![demo](./assets/Presentation/expedition-appetite-demo.gif)
 
@@ -123,6 +124,7 @@ The **collapsible** feature was used in the Yelp API response to show details of
             </li>
 ```
 ![collapsible](./assets/images/collapsible/feature-collapsible.gif)
+<br>
 <br>
 
 ### Javascript Libraries
