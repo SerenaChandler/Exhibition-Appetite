@@ -41,9 +41,9 @@ We started with a general idea of the page layout knowing that we would need:
 **Technologies Used**
 
 Here are the technologies we used in our application. Further below we'll go into details about why we used it.
-1. [Materialize CSS](https://materializecss.com/)
-2. [jQuery](https://jquery.com/)
-3. [SweetAlert.js](https://sweetalert.js.org/)
+    1. [Materialize CSS](https://materializecss.com/)
+    2. [jQuery](https://jquery.com/)
+    3. [SweetAlert.js](https://sweetalert.js.org/)
 
 
 **Materialize CSS**
@@ -117,16 +117,30 @@ The **collapsible** feature was used in the Yelp API response to show details of
 ![collapsible](./assets/images/collapsible/feature-collapsible.gif)
 <br>
 
+**Javascript Libraries**
 
+**jQuery** 
+This is the built in library that offers a simplified version of methods and selectors. jQuery breaks all of the elongated 
+text into small methods. jQuery helps your code look clean and compact, rather than having a bulk of words. A widely known
+symbol for jQuery is the "$" selector. Here are a few examples of jQuery being used below in our code:
 
-Jakes stuff here
+![collapsible](./assets/Presentation/selectorexample2.gif)
+![collapsible](./assets/Presentation/selectorexample1.gif)
+<br>
 
+**Sweet Alerts**
+Otherwise known as "sweetalerts.js" is the second library we chose to use for our modals. Sweet alerts offers a relatively
+simple and easy to use method that will display modals when called upon in a function. You are able to customize the pop-up
+with Icons, Titles, Text and Buttons. Here is an example of how we used Sweet Alerts on our website:
 
-
-
+![collapsible](./assets/Presentation/swalsnippet.gif)
+![collapsible](./assets/Presentation/swalexample1.gif)
+<br>
 
 ## API Used
-
+The API's we used for this project are:
+    1. Google Maps API
+    2. Yelp Business API
 
 
 
@@ -145,6 +159,10 @@ Please visit our page: [Materialize CSS](https://serenachandler.github.io/Projec
 
 ## Contributors
 LinkedIn Profile
+
+[Jake Novelli's GitHub]
+[Cheng Tang's GitHub](https://github.com/cheng21tang)
+
 GitHub Profile
 
 
@@ -159,52 +177,7 @@ Here is just a simple representation of our workflow:
 
 ### License
 
-
+This project is licensed under the MIT License.
 
 
 ### Acknowledgements
-
-
-
-
-## getting started
-To get started, you can download the entire repository and start by opening the **index.html**
--before we even thought about coding, a large portion of the project started with planning.
-
--from the get go, we had planned on using a google maps API, although the original idea was to have it work with flu data, and give the user data on whether it was safe to travel.
-
--We ended up running into some trouble with the flu API, and after much brainstorming, ending up deciding instead on using a Yelp API, to give users feedback on local restaurnts in sreas they travel to.
-
-## languages used
-html- HTML wa sused as the basic building block for the website. 
-JS- Javascript was used to create the interactible elements of the page
-Jquery - importing the JQeury library allowed us to implify the sytntax, and more easily append elements to the page
-Materialize - this was the main  framework that was used to build the layout of the page
-CSS - CSS was used to apply specific elements to pieces of the page
-
-## Prewview of the website
-
-![image](siteGif.gif)
-
-
-## code snippets (used to ensure user enters input data)
-```
-    if (requirements.origin === ''){ 
-            swal({
-                title: 'You did not enter an Origin!',
-                text: 'Please try again',
-                icon: 'error',
-                button: 'Try Again'
-            }) 
-```
-
-## code snippet ( How we used the APIS)
-```
- $.ajax({
-                url: googleAPI,
-                method: 'GET'
-            }).then(function(response){
-                console.log(response);
-                // Appending list items for previous searches
-                searchHist.append('<a class="col waves-effect waves-light btn history" style="width: auto" data-prevSearch="search1">' + requirements.dCity + ', ' + requirements.dState + '</a>');
-````
