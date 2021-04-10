@@ -51,6 +51,7 @@ Below are the features we used within our application:
 
 
 **Media breakpoints**
+
 Materialize CSS made has a get structure for their page layout and made it easy to implement **media breakpoints**
 
 In our application, we employed 2 different breakpoints:
@@ -73,6 +74,7 @@ Below is a sample of our code and how our application looks when resized:
 
 
 **Collapsible**
+
 The **collapsible** feature was used in the Yelp API response to show details of the restaurants neare their destination. A nice option of this feature was adding the `class="active` on one the first element that way we could signal to the user that there is content inside of these elements and that they should click on them.
 
 ```
