@@ -4,7 +4,7 @@
 
 Now the user has their travel itinerary and options for places to eat!
 
-Please visit our page: [Expedition Appetite](https://serenachandler.github.io/Project1/)
+Please visit our page [Expedition Appetite](https://serenachandler.github.io/Project1/).
 
 
 ## Project Objective
@@ -12,13 +12,13 @@ Please visit our page: [Expedition Appetite](https://serenachandler.github.io/Pr
 This project is a group assignment which included the team members **Jake Novelli**, **Cheng Tang**,and **Serena Chandler**. The project idea was open to us to come up with but we had certain restrictions and limitations to abide by.
 
 -   Use a `framework` other than **Bootstrap**
--   Webpage had to be interactive
+-   Webpage had to be `interactive`
 -   User `validation` was needed
 -   Use at least two `server-side API's` we had not used before
 -   Use `<modal>`s in place of `alert`s, `confirm`s, or `prompt`s
--   Use a new library
--   Use client-side storage
--   Be responsive
+-   Use a new `library`
+-   Use `client-side storage`
+-   Be `responsive`
 <br>
 This offered us a challenge but also freedom to research and decide on technologies we were interested in learning.
 
@@ -29,7 +29,7 @@ This offered us a challenge but also freedom to research and decide on technolog
 
 Here are the User Stories we used to create our application.
 
-![UserStory-1](./assets/user-story/user-stories.png)
+![UserStory-1](./assets/user-story/user-stories.PNG)
 
 
 ## Wireframe vs Final Product
