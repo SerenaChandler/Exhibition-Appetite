@@ -124,8 +124,8 @@ This is the built in library that offers a simplified version of methods and sel
 text into small methods. jQuery helps your code look clean and compact, rather than having a bulk of words. A widely known
 symbol for jQuery is the "$" selector. Here are a few examples of jQuery being used below in our code:
 
-![collapsible](./assets/Presentation/selectorexample2.PNG)
-![collapsible](./assets/Presentation/selectorexample1.PNG)
+![selectorexample2](./assets/Presentation/selectorexample2.PNG)
+![selectorexample1](./assets/Presentation/selectorexample1.PNG)
 <br>
 
 **Sweet Alerts**
@@ -133,8 +133,8 @@ Otherwise known as "sweetalerts.js" is the second library we chose to use for ou
 simple and easy to use method that will display modals when called upon in a function. You are able to customize the pop-up
 with Icons, Titles, Text and Buttons. Here is an example of how we used Sweet Alerts on our website:
 
-![collapsible](./assets/Presentation/swalsnippet.PNG)
-![collapsible](./assets/Presentation/swalexample1.gif)
+![swalsnippet](./assets/Presentation/swalsnippet.PNG)
+![swalexample1](./assets/Presentation/swalexample1.gif)
 <br>
 
 ## API Used
@@ -142,6 +142,17 @@ The API's we used for this project are:
     1. Google Maps API
     2. Yelp Business API
 
+First step of using Web API's is to formulate a request in Javascript. To do that, we used the method "AJAX". We will pull
+the input values the user entered on the website, then push those values as parameters through AJAX to the Web API. 
+The API will then respond to our request with an OK or denying our response. To make sure our request is OK, we need to
+attach an API key on API's that require them. Once we recieve the ok, we can then mainpulate through the response 
+and append the results the user wanted to our page! Below are some brief examples of what the request and response looked
+like for both:
+
+![googleapi](./assets/Presentation/googleapi.PNG)
+![googleajax](./assets/Presentation/googleajax.PNG)
+![yelpapi](./assets/Presentation/yelpapi.PNG)
+![yelpajax](./assets/Presentation/yelpajax.PNG)
 
 
 
