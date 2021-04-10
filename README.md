@@ -22,7 +22,7 @@ This project is a group assignment which included the team members **Jake Novell
 <br>
 This offered us a challenge but also freedom to research and decide on technologies we were interested in learning.
 
-![demo](./assets/Presentation/expedition-appetite-demo.mp4)
+![demo](./assets/Presentation/expedition-appetite-demo.gif)
 
 
 ## User Stories
