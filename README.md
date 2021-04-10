@@ -1,15 +1,16 @@
 # Expedition Appetite
 
-**Expedition Appetite** is an application a user would use to get travel details/directions and find nearby food options like restaurants, near their destination. The user would first enter their **travel details** and tell us what **type of food** they were interested in. Then we would return back their travel details from a Google API and restaurant details from the Yelp API.
+<p>**Expedition Appetite** is an application a user would use to get travel details/directions and find nearby food options like restaurants, near their destination. The user would first enter their **travel details** and tell us what **type of food** they were interested in. Then we would return back their travel details from a Google API and restaurant details from the Yelp API.<p>
 
-Now the user has their travel itinerary and options for places to eat!
+<p>Now the user has their travel itinerary and options for places to eat!<p>
 
-Please visit our page: [Expedition Appetite](https://serenachandler.github.io/Project1/)
+<p>Please visit our page: [Expedition Appetite](https://serenachandler.github.io/Project1/)<p>
 
 
 ## Project Objective
 
-This project is a group assignment which included the team members **Jake Novelli**, **Cheng Tang**,and **Serena Chandler**. The project idea was open to us to come up with but we had certain restrictions and limitations to abide by.
+<p>This project is a group assignment which included the team members **Jake Novelli**, **Cheng Tang**,and **Serena Chandler**. The project idea was open to us to come up with but we had certain restrictions and limitations to abide by.<p>
+
 -   Use a `framework` other than **Bootstrap**
 -   Webpage had to be interactive
 -   User `validation` was needed
@@ -19,19 +20,19 @@ This project is a group assignment which included the team members **Jake Novell
 -   Use client-side storage
 -   Be responsive
 <br>
-This offered us a challenge but also freedom to research and decide on technologies we were interested in learning.
+<p>This offered us a challenge but also freedom to research and decide on technologies we were interested in learning.<p>
 
 
 ## User Stories
 
-Here are the User Stories we used to create our application.
+<p>Here are the User Stories we used to create our application.<p>
 
 ![UserStory-1](./assets/user-story/user-stories.png)
 
 
 ## Wireframe vs Final Product
 
-We started with a general idea of the page layout knowing that we would need:
+<p>We started with a general idea of the page layout knowing that we would need:<p>
 1. A `<form>` for user input
 2. A `<modal>` for user validation
 3. Several `<button>` for previous search history
@@ -55,11 +56,10 @@ Here are the technologies we used in our application. Further below we'll go int
 <p>We decided to use Materialize CSS for our framework due to the design language/styling, the simplicity of their documentation, and the ease of implementating their features.
 
 Below are the features we used within our application:<p>
-<br>
 
 **Carousel & Parallax**
 
-We wanted to inspire our visitors with food options as soon as they landed on the page. This was a great opportunity to use the **carousel** feature from Materialize CSS. We also wanted to use the **parallax** feature and simple enough we just had to add it as a class and it would give the image the **parallax** effect so we used it in conjunction with the **carousel**. Another additional feature that the `class="carousel-slider"` we also used was full width and mobile ready.
+<p>We wanted to inspire our visitors with food options as soon as they landed on the page. This was a great opportunity to use the **carousel** feature from Materialize CSS. We also wanted to use the **parallax** feature and simple enough we just had to add it as a class and it would give the image the **parallax** effect so we used it in conjunction with the **carousel**. Another additional feature that the `class="carousel-slider"` we also used was full width and mobile ready.<p>
 
 ```
 <div class="container">
