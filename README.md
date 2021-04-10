@@ -22,6 +22,8 @@ This project is a group assignment which included the team members **Jake Novell
 <br>
 This offered us a challenge but also freedom to research and decide on technologies we were interested in learning.
 
+![demo](./assets/Presentation/expedition-appetite-demo.mp4)
+
 
 ## User Stories
 
@@ -49,13 +51,14 @@ Here are the technologies we used in our application. Further below we'll go int
 2. [jQuery](https://jquery.com/)
 3. [SweetAlert.js](https://sweetalert.js.org/)
 <br>
-<br>
-<br>
 
-**Materialize CSS**
+### Materialize CSS
+
 We decided to use Materialize CSS for our framework due to the design language/styling, the simplicity of their documentation, and the ease of implementating their features.
 
 Below are the features we used within our application:
+
+<hr>
 
 **Carousel & Parallax**
 
@@ -122,9 +125,10 @@ The **collapsible** feature was used in the Yelp API response to show details of
 ![collapsible](./assets/images/collapsible/feature-collapsible.gif)
 <br>
 
-**Javascript Libraries**
+### Javascript Libraries
 
-**jQuery** 
+**jQuery**
+
 This is the built in library that offers a simplified version of methods and selectors. jQuery breaks all of the elongated 
 text into small methods. jQuery helps your code look clean and compact, rather than having a bulk of words. A widely known
 symbol for jQuery is the "$" selector. Here are a few examples of jQuery being used below in our code:
@@ -134,6 +138,7 @@ symbol for jQuery is the "$" selector. Here are a few examples of jQuery being u
 <br>
 
 **Sweet Alerts**
+
 Otherwise known as "sweetalerts.js" is the second library we chose to use for our modals. Sweet alerts offers a relatively
 simple and easy to use method that will display modals when called upon in a function. You are able to customize the pop-up
 with Icons, Titles, Text and Buttons. Here is an example of how we used Sweet Alerts on our website:
@@ -143,6 +148,7 @@ with Icons, Titles, Text and Buttons. Here is an example of how we used Sweet Al
 <br>
 
 ## API Used
+
 The API's we used for this project are:
     1. Google Maps API
     2. Yelp Business API
@@ -175,10 +181,6 @@ These are the features we wanted to implement but as we focused on our MVP these
 - Current Location.
 - Create multiple stops before ending destination.
 
-
-
-
-
 ## Contributors
 **LinkedIn Profile**
 - [Jake Novelli's LinkedIn Profile](https://www.linkedin.com/in/david-jacob-novelli/)
@@ -192,15 +194,10 @@ These are the features we wanted to implement but as we focused on our MVP these
 - [Serena Chandler's GitHub]()
 
 
-
-
-
 ## Workflow Structure
 
 Here is just a simple representation of our workflow:
 ![collapsible](./assets/Presentation/workflow-infographic.PNG)
-
-
 
 
 ### License
