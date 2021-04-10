@@ -1,20 +1,21 @@
 # Expedition Appetite
 
-Expedition Appetite is an application a user would use to get travel details/directions and find nearby food options like restaurants, near your destination. The user would first enter their *travel details* and tell us what *type of food* they were interested in. Then we would return back their travel details from a Google API and restaurant details of the Yelp API.
+Expedition Appetite is an application a user would use to get travel details/directions and find nearby food options like restaurants, near their destination. The user would first enter their **travel details** and tell us what **type of food** they were interested in. Then we would return back their travel details from a Google API and restaurant details from the Yelp API.
 
 Now the user has their travel itinerary and options for places to eat!
 
 
 ## Objective of Project
 
-This is our project of a group assignment which included the team members Jake Novelli, Serena Chandler, and Cheng Tang.
-
-
-
-## Acceptance Criteria
-
-
-
+This project is a group assignment which included the team members **Jake Novelli**, **Cheng Tang**,and **Serena Chandler**. The project idea was open to us to come up with but we had certain restrictions and limitations to abide by.
+-   Use a `framework` other than **Bootstrap**
+-   Webpage had to be interactive
+-   User `validation` was needed
+-   Use at least two `server-side API's` we had not used before
+-   Use `<modal>`s in place of `alert`s, `confirm`s, or `prompt`s
+-   Use a new library
+-   Use client-side storage
+-   Be responsive
 
 
 ## User Stories
@@ -155,14 +156,20 @@ like for both:
 ![yelpajax](./assets/Presentation/yelpajax.PNG)
 
 
-
 ## Deployed Link
+
 Please visit our page: [Expedition Appetite](https://serenachandler.github.io/Project1/)
 
 
-
-
 ## Future Development
+
+These are the features we wanted to implement but as we focused on our MVP these moved to future development considerations.
+
+- Implement a map with directions.
+- Implement other modes(Walking, Biking, Flying).
+- Dynamic Photos from Yelp.
+- Current Location.
+- Create multiple stops before ending destination.
 
 
 
