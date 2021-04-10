@@ -57,8 +57,6 @@ In our application, we employed 2 different breakpoints:
 
 Below is a sample of our code and how our application looks when resized:
 
-![breakpoints](./assets/images/media-screens/media-screen-breakpoints.gif)
-
 ```
 <div class="row">
             <div id="searchArea" class="col s12 m4 l4 white-text">
@@ -69,7 +67,7 @@ Below is a sample of our code and how our application looks when resized:
                         <label for="origin-city"></label>
                     </div>
 ```
-
+![breakpoints](./assets/images/media-screens/media-screen-breakpoints.gif)
 
 
 
