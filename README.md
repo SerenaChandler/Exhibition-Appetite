@@ -1,15 +1,174 @@
-# Project 1 "Expedition Appetite"
+# Expedition Appetite
 
-## Summary of assignment
-We were tasked with creatig a new web program from thr ground up. We had a few pre requestists that we had to fulfil, namely
+Expedition Appetite is an application a user would use to get travel details/directions and find nearby food options like restaurants, near your destination. The user would first enter their *travel details* and tell us what *type of food* they were interested in. Then we would return back their travel details from a Google API and restaurant details of the Yelp API.
 
--2 different servierside APIs had to be used, in this case we used both Good Maps's API, as well as the Yelp API
+Now the user has their travel itinerary and options for places to eat!
 
--we had to use a new framework. Previously we had experience with bootstrap, but for this assignment we had to implement a new framework
 
--2 different libraries also had to be implemented 
+## Objective of Project
+
+This is our project of a group assignment which included the team members Jake Novelli, Serena Chandler, and Cheng Tang.
+
+
+
+## Acceptance Criteria
+
+
+
+
+
+## User Stories
+
+Here are the User Stories we used to create our application.
+
+![UserStory-1](./assets/user-story/user-stories.png)
+
+
+## Wireframe vs Final Product
+
+We started with a general idea of the page layout knowing that we would need:
+1. A `<form>` for user input
+2. A `<modal>` for user validation
+3. Several `<button>` for previous search history
+4. A `<div>` for the travel details
+5. A `<div>` for the food details
+
+![wireframe-vs-final-product](./assets/wireframe/wireframe-vs-final-product.PNG)
+
+
+## Technologies & Features Used
+
+**Technologies Used**
+
+Here are the technologies we used in our application. Further below we'll go into details about why we used it.
+1. [Materialize CSS](https://materializecss.com/)
+2. [jQuery](https://jquery.com/)
+3. [SweetAlert.js](https://sweetalert.js.org/)
+
+
+**Materialize CSS**
+We decided to use Materialize CSS for our framework due to the design language/styling, the simplicity of their documentation, and the ease of implementating their features.
+
+Below are the features we used within our application:
+<br>
+
+**Carousel & Parallax**
+
+We wanted to inspire our visitors with food options as soon as they landed on the page. This was a great opportunity to use the **carousel** feature from Materialize CSS. We also wanted to use the **parallax** feature and simple enough we just had to add it as a class and it would give the image the **parallax** effect so we used it in conjunction with the **carousel**. Another additional feature that the `class="carousel-slider"` we also used was full width and mobile ready.
+
+```
+<div class="container">
+    <div class="carousel carousel-slider parallax-container" style="max-height:600px">
+        <a class="carousel-item responsive-img parallax" href="#one!"><img src="./assets/images/carousel/carousel-1.jpg"></a>
+        <a class="carousel-item responsive-img parallax" href="#two!"><img src="./assets/images/carousel/carousel-2.jpg"></a>
+        <a class="carousel-item responsive-img parallax" href="#three!"><img src="./assets/images/carousel/carousel-3.jpg"></a>
+    </div>
+```
+![carousel-parallax](./assets/images/carousel/feature-carousel-parallax.gif)
+<br>
+
+**Media breakpoints**
+
+Materialize CSS made has a get structure for their page layout and made it easy to implement **media breakpoints**
+
+In our application, we employed 2 different breakpoints:
+    - Medium - 33%
+    - Small - 100%
+
+Below is a sample of our code and how our application looks when resized:
+
+```
+<div class="row">
+            <div id="searchArea" class="col s12 m4 l4 white-text">
+                <h3>Search Area</h3>
+                <form>
+                    <div class="input-field">
+                        <input class="originCity white-text" type="text" placeholder="Origin City">
+                        <label for="origin-city"></label>
+                    </div>
+```
+![breakpoints](./assets/images/media-screens/media-screen-breakpoints.gif)
+<br>
+
+**Collapsible**
+
+The **collapsible** feature was used in the Yelp API response to show details of the restaurants neare their destination. A nice option of this feature was adding the `class="active` on one the first element that way we could signal to the user that there is content inside of these elements and that they should click on them.
+
+```
+        <!-- COLLAPSIBLE CONTAINER FOR RESTAURANT SEARCH RESULTS -->
+        <ul id="foodContainer" class="collapsible">
+            <!-- JAVASCRIPT WILL RENDER UPON USER SEARCH -->
+            <li class="active">
+                <div class="collapsible-header"><i class="material-icons" style="color: #FC90A4;">push_pin</i>Name of Restaurant</div>
+                <div class="collapsible-body row">
+                    <div class="col s12 m4">
+                        <img id="restImg1" class="responsive-img"
+                            src="./assets/images/yelp image results/yelp-image-results-1.jpg">
+                    </div>
+                    <div id="restDetails1" class="col s12 m8">
+                        <p class="flow-text">Address</p>
+                        <p class="flow-text">$$$</p>
+                        <p class="flow-text">Rating</p>
+                        <a class="flow-text" target="_blank" href="https://www.yelp.com">Visit</a>
+                    </div>
+                </div>
+            </li>
+```
+![collapsible](./assets/images/collapsible/feature-collapsible.gif)
+<br>
+
+
+
+Jakes stuff here
+
+
+
+
+
+## API Used
+
+
+
+
+
+## Deployed Link
+Please visit our page: [Materialize CSS](https://serenachandler.github.io/Project1/)
+
+
+
+
+## Future Development
+
+
+
+
+
+## Contributors
+LinkedIn Profile
+GitHub Profile
+
+
+
+## Workflow Structure
+
+Here is just a simple representation of our workflow:
+![collapsible](./assets/Presentation/workflow-infographic.PNG)
+
+
+
+
+### License
+
+
+
+
+### Acknowledgements
+
+
+
 
 ## getting started
+To get started, you can download the entire repository and start by opening the **index.html**
 -before we even thought about coding, a large portion of the project started with planning.
 
 -from the get go, we had planned on using a google maps API, although the original idea was to have it work with flu data, and give the user data on whether it was safe to travel.
