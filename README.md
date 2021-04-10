@@ -157,7 +157,7 @@ like for both:
 
 
 ## Deployed Link
-Please visit our page: [Materialize CSS](https://serenachandler.github.io/Project1/)
+Please visit our page: [Expedition Appetite](https://serenachandler.github.io/Project1/)
 
 
 
@@ -169,12 +169,18 @@ Please visit our page: [Materialize CSS](https://serenachandler.github.io/Projec
 
 
 ## Contributors
-LinkedIn Profile
+**LinkedIn Profile**
+[Jake Novelli's LinkedIn Profile](https://www.linkedin.com/in/david-jacob-novelli/)
+[Cheng Tang's LinkedIn Profile](https://www.linkedin.com/in/cheng-tang-0663211a3/)
+[Serena Chandler's LinkdedIn Profile]()
+<br>
 
-[Jake Novelli's GitHub]
+**GitHub Profile**
+[Jake Novelli's GitHub](https://github.com/dnovelli1)
 [Cheng Tang's GitHub](https://github.com/cheng21tang)
+[Serena Chandler's GitHub]()
 
-GitHub Profile
+
 
 
 
