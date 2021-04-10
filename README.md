@@ -47,6 +47,8 @@ We started with a general idea of the page layout knowing that we would need:
 **Materialize CSS**
 We decided to use Materialize CSS for our framework due to the design language/styling, the simplicity of their documentation, and the ease of implementating their features.
 
+Below are the features we used within our application:
+
 
 **Media breakpoints**
 Materialize CSS made has a get structure for their page layout and made it easy to implement **media breakpoints**
@@ -68,6 +70,35 @@ Below is a sample of our code and how our application looks when resized:
                     </div>
 ```
 ![breakpoints](./assets/images/media-screens/media-screen-breakpoints.gif)
+
+
+**Collapsible**
+The **collapsible** feature was used in the Yelp API response to show details of the restaurants neare their destination. A nice option of this feature was adding the `class="active` on one the first element that way we could signal to the user that there is content inside of these elements and that they should click on them.
+
+```
+        <!-- COLLAPSIBLE CONTAINER FOR RESTAURANT SEARCH RESULTS -->
+        <ul id="foodContainer" class="collapsible">
+            <!-- JAVASCRIPT WILL RENDER UPON USER SEARCH -->
+            <li class="active">
+                <div class="collapsible-header"><i class="material-icons" style="color: #FC90A4;">push_pin</i>Name of Restaurant</div>
+                <div class="collapsible-body row">
+                    <div class="col s12 m4">
+                        <img id="restImg1" class="responsive-img"
+                            src="./assets/images/yelp image results/yelp-image-results-1.jpg">
+                    </div>
+                    <div id="restDetails1" class="col s12 m8">
+                        <p class="flow-text">Address</p>
+                        <p class="flow-text">$$$</p>
+                        <p class="flow-text">Rating</p>
+                        <a class="flow-text" target="_blank" href="https://www.yelp.com">Visit</a>
+                    </div>
+                </div>
+            </li>
+```
+![collapsible](./assets/images/collapsible/feature-collapsible.gif)
+
+
+
 
 
 
