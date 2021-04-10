@@ -1,11 +1,13 @@
 # Expedition Appetite
 
-Expedition Appetite is an application a user would use to get travel details/directions and find nearby food options like restaurants, near their destination. The user would first enter their **travel details** and tell us what **type of food** they were interested in. Then we would return back their travel details from a Google API and restaurant details from the Yelp API.
+**Expedition Appetite** is an application a user would use to get travel details/directions and find nearby food options like restaurants, near their destination. The user would first enter their **travel details** and tell us what **type of food** they were interested in. Then we would return back their travel details from a Google API and restaurant details from the Yelp API.
 
 Now the user has their travel itinerary and options for places to eat!
 
+Please visit our page: [Expedition Appetite](https://serenachandler.github.io/Project1/)
 
-## Objective of Project
+
+## Project Objective
 
 This project is a group assignment which included the team members **Jake Novelli**, **Cheng Tang**,and **Serena Chandler**. The project idea was open to us to come up with but we had certain restrictions and limitations to abide by.
 -   Use a `framework` other than **Bootstrap**
@@ -16,6 +18,8 @@ This project is a group assignment which included the team members **Jake Novell
 -   Use a new library
 -   Use client-side storage
 -   Be responsive
+<br>
+This offered us a challenge but also freedom to research and decide on technologies we were interested in learning.
 
 
 ## User Stories
@@ -39,18 +43,18 @@ We started with a general idea of the page layout knowing that we would need:
 
 ## Technologies & Features Used
 
-**Technologies Used**
-
-Here are the technologies we used in our application. Further below we'll go into details about why we used it.
-    1. [Materialize CSS](https://materializecss.com/)
-    2. [jQuery](https://jquery.com/)
-    3. [SweetAlert.js](https://sweetalert.js.org/)
-
+Here are the technologies we used in our application. Further below we'll go into details about why and how we used it.
+1. [Materialize CSS](https://materializecss.com/)
+2. [jQuery](https://jquery.com/)
+3. [SweetAlert.js](https://sweetalert.js.org/)
+<br>
+<br>
+<br>
 
 **Materialize CSS**
-We decided to use Materialize CSS for our framework due to the design language/styling, the simplicity of their documentation, and the ease of implementating their features.
+<p>We decided to use Materialize CSS for our framework due to the design language/styling, the simplicity of their documentation, and the ease of implementating their features.
 
-Below are the features we used within our application:
+Below are the features we used within our application:<p>
 <br>
 
 **Carousel & Parallax**
