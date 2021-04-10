@@ -38,10 +38,12 @@ We started with a general idea of the page layout knowing that we would need:
 
 ## Technologies & Features Used
 
-**High Overview of Technologies used**
-[Materialize CSS](https://materializecss.com/)
-[jQuery](https://jquery.com/)
-[SweetAlert.js](https://sweetalert.js.org/)
+**Technologies Used**
+
+Here are the technologies we used in our application. Further below we'll go into details about why we used it.
+1. [Materialize CSS](https://materializecss.com/)
+2. [jQuery](https://jquery.com/)
+3. [SweetAlert.js](https://sweetalert.js.org/)
 
 
 **Materialize CSS**
@@ -52,7 +54,7 @@ Below are the features we used within our application:
 
 **Carousel & Parallax**
 
-We wanted to inspire our visitors with food options as soon as they landed on the page. This was a great opportunity to use the **carousel** feature from Materialize CSS. We also wanted to use the **parallax** feature and simple enough we just had to add it as a class and it would give the image the **parallax** effect so we used it in conjunction with the **carousel**
+We wanted to inspire our visitors with food options as soon as they landed on the page. This was a great opportunity to use the **carousel** feature from Materialize CSS. We also wanted to use the **parallax** feature and simple enough we just had to add it as a class and it would give the image the **parallax** effect so we used it in conjunction with the **carousel**. Another additional feature that the `class="carousel-slider"` we also used was full width and mobile ready.
 
 ```
 <div class="container">
@@ -63,8 +65,7 @@ We wanted to inspire our visitors with food options as soon as they landed on th
     </div>
 ```
 ![carousel-parallax](./assets/images/carousel/feature-carousel-parallax.gif)
-
-
+<br>
 
 **Media breakpoints**
 
@@ -87,7 +88,7 @@ Below is a sample of our code and how our application looks when resized:
                     </div>
 ```
 ![breakpoints](./assets/images/media-screens/media-screen-breakpoints.gif)
-
+<br>
 
 **Collapsible**
 
@@ -114,14 +115,11 @@ The **collapsible** feature was used in the Yelp API response to show details of
             </li>
 ```
 ![collapsible](./assets/images/collapsible/feature-collapsible.gif)
+<br>
 
 
 
-
-
-
-## Demo
-## Explaination of the code
+Jakes stuff here
 
 
 
@@ -134,7 +132,7 @@ The **collapsible** feature was used in the Yelp API response to show details of
 
 
 ## Deployed Link
-
+Please visit our page: [Materialize CSS](https://serenachandler.github.io/Project1/)
 
 
 
@@ -153,6 +151,8 @@ GitHub Profile
 
 ## Workflow Structure
 
+Here is just a simple representation of our workflow:
+![collapsible](./assets/Presentation/workflow-infographic.PNG)
 
 
 
