@@ -170,15 +170,15 @@ Please visit our page: [Expedition Appetite](https://serenachandler.github.io/Pr
 
 ## Contributors
 **LinkedIn Profile**
-    - [Jake Novelli's LinkedIn Profile](https://www.linkedin.com/in/david-jacob-novelli/)
-    - [Cheng Tang's LinkedIn Profile](https://www.linkedin.com/in/cheng-tang-0663211a3/)
-    - [Serena Chandler's LinkdedIn Profile]()
+- [Jake Novelli's LinkedIn Profile](https://www.linkedin.com/in/david-jacob-novelli/)
+- [Cheng Tang's LinkedIn Profile](https://www.linkedin.com/in/cheng-tang-0663211a3/)
+- [Serena Chandler's LinkdedIn Profile]()
 <br>
 
 **GitHub Profile**
-    - [Jake Novelli's GitHub](https://github.com/dnovelli1)
-    - [Cheng Tang's GitHub](https://github.com/cheng21tang)
-    - [Serena Chandler's GitHub]()
+- [Jake Novelli's GitHub](https://github.com/dnovelli1)
+- [Cheng Tang's GitHub](https://github.com/cheng21tang)
+- [Serena Chandler's GitHub]()
 
 
 
