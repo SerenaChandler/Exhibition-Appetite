@@ -1,27 +1,36 @@
 # Expedition Appetite
 
-Expedition Appetite is an application a user would use to get travel details/directions and find nearby food options like restaurants, near your destination. The user would first enter their *travel details* and tell us what *type of food* they were interested in. Then we would return back their travel details from a Google API and restaurant details of the Yelp API.
+**Expedition Appetite** is an application a user would use to get travel details/directions and find nearby food options like restaurants, near their destination. The user would first enter their **travel details** and tell us what **type of food** they were interested in. Then we would return back their travel details from a Google API and restaurant details from the Yelp API.
 
 Now the user has their travel itinerary and options for places to eat!
 
-
-## Objective of Project
-
-This is our project of a group assignment which included the team members Jake Novelli, Serena Chandler, and Cheng Tang.
+Please visit our page [Expedition Appetite](https://serenachandler.github.io/Project1/).
 
 
+## Project Objective
 
-## Acceptance Criteria
+This project is a group assignment which included the team members **Jake Novelli**, **Cheng Tang**,and **Serena Chandler**. The project idea was open to us to come up with but we had certain restrictions and limitations to abide by.
 
+-   Use a `framework` other than **Bootstrap**
+-   Webpage had to be `interactive`
+-   User `validation` was needed
+-   Use at least two `server-side API's` we had not used before
+-   Use `<modal>`s in place of `alert`s, `confirm`s, or `prompt`s
+-   Use a new `library`
+-   Use `client-side storage`
+-   Be `responsive`
+<br>
+This offered us a challenge but also freedom to research and decide on technologies we were interested in learning.
+<br>
 
-
+![demo](./assets/Presentation/expedition-appetite-demo.gif)
 
 
 ## User Stories
 
 Here are the User Stories we used to create our application.
 
-![UserStory-1](./assets/user-story/user-stories.png)
+![UserStory-1](./assets/user-story/user-stories.PNG)
 
 
 ## Wireframe vs Final Product
@@ -38,19 +47,19 @@ We started with a general idea of the page layout knowing that we would need:
 
 ## Technologies & Features Used
 
-**Technologies Used**
+Here are the technologies we used in our application. Further below we'll go into details about why and how we used it.
+1. [Materialize CSS](https://materializecss.com/)
+2. [jQuery](https://jquery.com/)
+3. [SweetAlert.js](https://sweetalert.js.org/)
+<br>
 
-Here are the technologies we used in our application. Further below we'll go into details about why we used it.
-    1. [Materialize CSS](https://materializecss.com/)
-    2. [jQuery](https://jquery.com/)
-    3. [SweetAlert.js](https://sweetalert.js.org/)
+### Materialize CSS
 
-
-**Materialize CSS**
 We decided to use Materialize CSS for our framework due to the design language/styling, the simplicity of their documentation, and the ease of implementating their features.
 
 Below are the features we used within our application:
-<br>
+
+<hr>
 
 **Carousel & Parallax**
 
@@ -116,63 +125,81 @@ The **collapsible** feature was used in the Yelp API response to show details of
 ```
 ![collapsible](./assets/images/collapsible/feature-collapsible.gif)
 <br>
+<br>
 
-**Javascript Libraries**
+### Javascript Libraries
 
-**jQuery** 
+**jQuery**
+
 This is the built in library that offers a simplified version of methods and selectors. jQuery breaks all of the elongated 
 text into small methods. jQuery helps your code look clean and compact, rather than having a bulk of words. A widely known
 symbol for jQuery is the "$" selector. Here are a few examples of jQuery being used below in our code:
 
-![collapsible](./assets/Presentation/selectorexample2.gif)
-![collapsible](./assets/Presentation/selectorexample1.gif)
+![selectorexample2](./assets/Presentation/selectorexample2.PNG)
+![selectorexample1](./assets/Presentation/selectorexample1.PNG)
 <br>
 
 **Sweet Alerts**
+
 Otherwise known as "sweetalerts.js" is the second library we chose to use for our modals. Sweet alerts offers a relatively
 simple and easy to use method that will display modals when called upon in a function. You are able to customize the pop-up
 with Icons, Titles, Text and Buttons. Here is an example of how we used Sweet Alerts on our website:
 
-![collapsible](./assets/Presentation/swalsnippet.gif)
-![collapsible](./assets/Presentation/swalexample1.gif)
+![swalsnippet](./assets/Presentation/swalsnippet.PNG)
+![swalexample1](./assets/Presentation/swalexample1.gif)
 <br>
 
 ## API Used
+
 The API's we used for this project are:
     1. Google Maps API
     2. Yelp Business API
 
+First step of using Web API's is to formulate a request in Javascript. To do that, we used the method "AJAX". We will pull
+the input values the user entered on the website, then push those values as parameters through AJAX to the Web API. 
+The API will then respond to our request with an OK or denying our response. To make sure our request is OK, we need to
+attach an API key on API's that require them. Once we recieve the ok, we can then mainpulate through the response 
+and append the results the user wanted to our page! Below are some brief examples of what the request and response looked
+like for both:
 
+![googleapi](./assets/Presentation/googleapi.PNG)
+![googleajax](./assets/Presentation/googleajax.PNG)
+![yelpapi](./assets/Presentation/yelpapi.PNG)
+![yelpajax](./assets/Presentation/yelpajax.PNG)
 
 
 ## Deployed Link
-Please visit our page: [Materialize CSS](https://serenachandler.github.io/Project1/)
 
-
+Please visit our page: [Expedition Appetite](https://serenachandler.github.io/Project1/)
 
 
 ## Future Development
 
+These are the features we wanted to implement but as we focused on our MVP these moved to future development considerations.
 
-
-
+- Implement a map with directions.
+- Implement other modes(Walking, Biking, Flying).
+- Dynamic Photos from Yelp.
+- Current Location.
+- Create multiple stops before ending destination.
 
 ## Contributors
-LinkedIn Profile
+**LinkedIn Profile**
+- [Jake Novelli's LinkedIn Profile](https://www.linkedin.com/in/david-jacob-novelli/)
+- [Cheng Tang's LinkedIn Profile](https://www.linkedin.com/in/cheng-tang-0663211a3/)
+- [Serena Chandler's LinkdedIn Profile]()
+<br>
 
-[Jake Novelli's GitHub]
-[Cheng Tang's GitHub](https://github.com/cheng21tang)
-
-GitHub Profile
-
+**GitHub Profile**
+- [Jake Novelli's GitHub](https://github.com/dnovelli1)
+- [Cheng Tang's GitHub](https://github.com/cheng21tang)
+- [Serena Chandler's GitHub]()
 
 
 ## Workflow Structure
 
 Here is just a simple representation of our workflow:
 ![collapsible](./assets/Presentation/workflow-infographic.PNG)
-
-
 
 
 ### License
