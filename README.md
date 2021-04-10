@@ -48,6 +48,22 @@ We started with a general idea of the page layout knowing that we would need:
 We decided to use Materialize CSS for our framework due to the design language/styling, the simplicity of their documentation, and the ease of implementating their features.
 
 Below are the features we used within our application:
+<br>
+
+**Carousel & Parallax**
+
+We wanted to inspire our visitors with food options as soon as they landed on the page. This was a great opportunity to use the **carousel** feature from Materialize CSS. We also wanted to use the **parallax** feature and simple enough we just had to add it as a class and it would give the image the **parallax** effect so we used it in conjunction with the **carousel**
+
+```
+<div class="container">
+    <div class="carousel carousel-slider parallax-container" style="max-height:600px">
+        <a class="carousel-item responsive-img parallax" href="#one!"><img src="./assets/images/carousel/carousel-1.jpg"></a>
+        <a class="carousel-item responsive-img parallax" href="#two!"><img src="./assets/images/carousel/carousel-2.jpg"></a>
+        <a class="carousel-item responsive-img parallax" href="#three!"><img src="./assets/images/carousel/carousel-3.jpg"></a>
+    </div>
+```
+![carousel-parallax](./assets/images/carousel/feature-carousel-parallax.gif)
+
 
 
 **Media breakpoints**
