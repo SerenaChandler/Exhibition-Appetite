@@ -4,7 +4,7 @@
 
 Now the user has their travel itinerary and options for places to eat!
 
-Please visit our page [Expedition Appetite](https://serenachandler.github.io/Project1/).
+Please visit our page [Expedition Appetite](https://serenachandler.github.io/Exhibition-Appetite/).
 
 
 ## Project Objective
